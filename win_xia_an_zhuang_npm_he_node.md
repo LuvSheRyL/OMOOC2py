@@ -8,6 +8,8 @@ http://nodejs.org/dist/v0.10.15/node.exe
 
 http://nodejs.org/dist/v0.10.15/x64/node.exe
 
+ *http打不开，建议改成https试试*
+
 ## 下载npm 
 下载地址： http://nodejs.org/dist/npm/npm-1.3.7.zip 
 你可以到http://nodejs.org/dist/npm找到最新的版本。 
@@ -30,7 +32,9 @@ http.createServer(function (request, response) {
 }).listen(8000);
  
 console.log('Server running at http://localhost:8000/');
+
 1、保存代码到 d:\test\test1.js 
+
 2、命令行下执行命令： 
 D:\dev\node\node d:\test\test1.js
 
