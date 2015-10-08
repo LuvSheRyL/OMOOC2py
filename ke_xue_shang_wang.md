@@ -18,7 +18,7 @@
  
 
 ##配置文档
- ###Win环境
+### Win环境
 [Windows设置登录VPN服务器图文介绍](https://www.ivpncup.me/config/windows)
 
 ###Mac环境
