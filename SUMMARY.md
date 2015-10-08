@@ -3,7 +3,7 @@
 * [介绍](README.md)
    * [Markdown语法简介](markdownyu_fa_jian_jie.md)
    * [科学上网](ke_xue_shang_wang.md)
-       * GIT下载
+       * [GIT下载](http://git-scm.com/download/win)
    * [Gitbook与Github互推](gitbookyu_github_hu_tui.md)
        * [Win 下安装NPM和Node](win_xia_an_zhuang_npm_he_node.md)
 * [教学反转](0MOOC/README.md)
