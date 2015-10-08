@@ -12,7 +12,18 @@
 
 + 付费版
  - 1-100G/年
- - ¥50/月
+ - ¥50/G/月
  - 稳定
  
+
+##配置文档
+ ###Win环境
+[Windows设置登录VPN服务器图文介绍](https://www.ivpncup.me/config/windows)
+
+###Mac环境
+[Mac OS X系统设置VPN](https://www.ivpncup.me/config/macosx)
+
+
+###Ubuntu环境
+[Ubuntu设置VPN](https://www.ivpncup.me/config/ubuntu)
 
