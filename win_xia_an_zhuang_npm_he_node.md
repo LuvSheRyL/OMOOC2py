@@ -41,3 +41,9 @@ D:\dev\node\node d:\test\test1.js
 通过浏览器访问 http://localhost:8000/
 
 看到结果了吗？
+
+参考文献：
+
+[Windows 下安装NPM](http://blog.csdn.net/yczz/article/details/6938260)
+
+[NodeJS、NPM安装配置步骤(windows版本)  ](http://xiaoyaojones.blog.163.com/blog/static/28370125201351501113581/)
