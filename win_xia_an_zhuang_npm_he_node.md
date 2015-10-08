@@ -42,7 +42,7 @@ D:\dev\node\node d:\test\test1.js
 
 看到结果了吗？
 
-参考文献：
+参考文献 ：
 
 [Windows 下安装NPM](http://blog.csdn.net/yczz/article/details/6938260)
 
