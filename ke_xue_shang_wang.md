@@ -1,6 +1,7 @@
-# 科学上网
+#科学上网
 
-##推荐网站：[ivpncup](https://www.ivpncup.me/)
+
+## 推荐网站：[ivpncup](https://www.ivpncup.me/)
 
 >提醒：非此域名链接均为假冒
 
