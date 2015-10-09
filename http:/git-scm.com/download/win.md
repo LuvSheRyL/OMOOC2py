@@ -1,5 +1,8 @@
-# [GIT下载](http://git-scm.com/download/win)
+
 
 # [多用Git少交税](http://www.jianshu.com/p/8a985c622e61)
 
 >Git是一套版本管理系统。看到“Git版本管理”，一大部分盆友已经转身想走，在你握着门把手准备开门走人时，请最后听我说完最后一句：人人都需要版本管理，git可以帮你少交停电/蓝屏/死机税，提高产出效率，不来一发吗？
+
+
+ [下载链接](http://git-scm.com/download/win)
