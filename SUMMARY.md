@@ -2,7 +2,7 @@
 
 * [介绍](README.md)
    * [Markdown语法简介](markdownyu_fa_jian_jie.md)
-   * [科学上网](ke_xue_shang_wang.md)
+   * [环境配置](ke_xue_shang_wang.md)
        * [Gitbook与Github互推](gitbookyu_github_hu_tui.md)
        * [GIT](http:/git-scm.com/download/win.md)
        * [npm安装图文教程](npman_zhuang_tu_wen_jiao_cheng.md)
