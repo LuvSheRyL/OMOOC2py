@@ -5,6 +5,7 @@
    * [科学上网](ke_xue_shang_wang.md)
        * [Gitbook与Github互推](gitbookyu_github_hu_tui.md)
            * [Win 下安装NPM和Node](win_xia_an_zhuang_npm_he_node.md)
+           * npm安装图文教程
        * [GIT下载](http:/git-scm.com/download/win.md)
 * [教学反转](0MOOC/README.md)
 * [基础旋进](1sTry/README.md)
