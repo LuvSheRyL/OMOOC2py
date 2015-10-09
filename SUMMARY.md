@@ -6,7 +6,7 @@
        * [Gitbook与Github互推](gitbookyu_github_hu_tui.md)
            * [Win 下安装NPM和Node](win_xia_an_zhuang_npm_he_node.md)
            * [npm安装图文教程](npman_zhuang_tu_wen_jiao_cheng.md)
-       * [GIT下载](http:/git-scm.com/download/win.md)
+       * [GIT](http:/git-scm.com/download/win.md)
 * [教学反转](0MOOC/README.md)
 * [基础旋进](1sTry/README.md)
 * [迭代作品](2nDev/README.md)
