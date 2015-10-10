@@ -4,7 +4,7 @@
    * [1.1Markdown语法简介](markdownyu_fa_jian_jie.md)
    * [1.2环境配置](kexue_shang_wang_md.md)
        * [1.2.1 Gitbook与Github互推](gitbookyu_github_hu_tui.md)
-       * [1.2.2 GIT](http:/git-scm.com/download/win.md)
+       * [1.2.2 GIT](http:/git-scm.com/download/winmd.md)
            * [git常用命令](git_command.md)
        * [1.2.3 npm安装](npmanzhuang_tu_wen_jiao_cheng_md.md)
        * [1.2.4 NPM和Node安装](winxia_an_zhuang_npm_he_node_md.md)
