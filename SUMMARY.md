@@ -1,14 +1,14 @@
-# 目录
+# Summary
 
 * [介绍](README.md)
    * [1.1Markdown语法简介](markdownyu_fa_jian_jie.md)
-   * [1.2环境配置](ke_xue_shang_wang.md)
+   * [1.2环境配置](kexue_shang_wang_md.md)
        * [1.2.1 Gitbook与Github互推](gitbookyu_github_hu_tui.md)
        * [1.2.2 GIT](http:/git-scm.com/download/win.md)
-	       * [git常用命令](git_command.md)	    
+           * [git常用命令](git_command.md)
        * [1.2.3 npm安装](npman_zhuang_tu_wen_jiao_cheng.md)
        * [1.2.4 NPM和Node安装](win_xia_an_zhuang_npm_he_node.md)
-       * [1.2.5 iPython 安装](http://jupyter.readthedocs.org/en/latest/install.html)
+       * [1.2.5 iPython 安装](http:/jupyter.readthedocs.org/en/latest/install.html)
 * [2 教学反转](0MOOC/README.md)
 * [3 基础旋进](1sTry/README.md)
 * [4 迭代作品](2nDev/README.md)
