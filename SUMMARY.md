@@ -8,7 +8,7 @@
            * [git常用命令](git_command.md)
        * [1.2.3 npm安装](npman_zhuang_tu_wen_jiao_cheng.md)
        * [1.2.4 NPM和Node安装](win_xia_an_zhuang_npm_he_node.md)
-       * [1.2.5 iPython 安装](http:/jupyter.readthedocs.org/en/latest/install.html)
+       * [1.2.5 iPython 安装](http:/jupyter.readthedocs.org/en/latest/installhtml.md)
 * [2 教学反转](0MOOC/README.md)
 * [3 基础旋进](1sTry/README.md)
 * [4 迭代作品](2nDev/README.md)
