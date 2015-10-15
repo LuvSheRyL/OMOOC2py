@@ -5,6 +5,8 @@
     "author": "Robo_one",
     "plugins":["disqus"],
     "pluginsConfig":{  
-	"disqus":{"shortName": "<pythonopenmid0101>"}
+	"disqus":{
+		"shortName": "<pythonopenmind0101>"
+		}
 	}
 }
