@@ -11,7 +11,9 @@
 这时候进入了新书的初始化界面，上面有两个选项，一个是现在开始写，一个是联动Github，都不要点，看到下面的…or push an existing repository from the command line了吗，这个标题下面第一行有一个https开头、.git结尾，例如：https://git.gitbook.com/<你的ID>/<仓库名>.git的网址，把这个网址复制下来。
 
 首先，将之前建立的Github的库克隆到本地（具体方法在第一段）。
-进入库文件夹。 cd 本地库的名字 （因为是从github上拽下来的, 所以就是github上库的名字哦。）
+进入库文件夹。
+
+ cd 本地库的名字 （因为是从github上拽下来的, 所以就是github上库的名字哦。）
 
 输入`vi ./.git/config`
 

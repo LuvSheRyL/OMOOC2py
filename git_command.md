@@ -2,6 +2,8 @@
 最常用 ： `git command --help `
 
 > [Git命令参考](http://blog.chinaunix.net/uid-25806493-id-3328322.html)
+> 
+> [GIT 下载](http://git-scm.com/downloads)
 
 ## 1. 创建
 
