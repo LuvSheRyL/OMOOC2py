@@ -17,5 +17,16 @@
 
 >Python程序输出到文件中：[Python程序输出到文件中](http://www.cnblogs.com/sysuoyj/archive/2012/03/14/2395868.html)
 
-思路很混乱
-各处代码东拼西凑。
+## 载入外部命令
+'from sys import argv
+script , input_file = argv'
+
+
+## 读取文件
+
+'current_file = open(input_file, 'a')'
+'diary_read = open(input_file,'r')
+		print "Loading..."
+		print diary_read.read()
+		diary_read.close()
+'

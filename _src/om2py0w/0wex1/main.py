@@ -25,7 +25,7 @@ otherStyleTime = now.strftime("%Y-%m-%d %H:%M:%S")
 # function write
 def diary_write(f):
 	line = raw_input("-->")
-	current_file.write("Time %r  \n" % otherStyleTime)
+	current_file.write("--- %r --- \n" % otherStyleTime)
 	current_file.write(line)
 	current_file.write("\n")
 	
@@ -33,9 +33,10 @@ def diary_write(f):
 	current_file.close()
 
 def diary_main():
+	current_file = open(input_file, 'a')
 	print "***Press 'w' or 'W' write diary.********\n"
 	print "***Press 'r' or 'R' read all diary.*****\n"
-	a = raw_input("?")
+	a = raw_input("W OR R?")
 	if a=='w' or a=='W':
 		diary_write(current_file)
 	elif a=='r' or a=='R':
@@ -46,7 +47,6 @@ def diary_main():
 	else:
 		print "Error,plz input w or r?"
 		
-	return
 
 while 1:
 	diary_main()
