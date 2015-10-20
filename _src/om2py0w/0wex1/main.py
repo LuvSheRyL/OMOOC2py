@@ -16,16 +16,16 @@ import datetime
 now = datetime.datetime.now()
 otherStyleTime = now.strftime("%Y-%m-%d %H:%M:%S")
 #read diary
-def diary_read(f):
-	print "Your file %r:" % input_file
-	f.seek(0,0)
-	print current_file.read()
-	current_file.close()
+#def diary_read(f):
+#	print "Your file %r:" % input_file
+#	f.seek(0,0)
+#	print current_file.read()
+#	current_file.close()
 
 # function write
 def diary_write(f):
 	line = raw_input("-->")
-	current_file.write("Time %r  \r\n" % otherStyleTime)
+	current_file.write("Time %r  \n" % otherStyleTime)
 	current_file.write(line)
 	current_file.write("\n")
 	
@@ -39,10 +39,14 @@ def diary_main():
 	if a=='w' or a=='W':
 		diary_write(current_file)
 	elif a=='r' or a=='R':
-		diary_read(current_file)
+		diary_read = open(input_file,'r')
+		print "Loading..."
+		print diary_read.read()
+		diary_read.close()
 	else:
 		print "Error,plz input w or r?"
-					
+		
+	return
 
 while 1:
 	diary_main()
