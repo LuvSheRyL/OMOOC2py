@@ -13,8 +13,7 @@ script , input_file = argv
 
 # import sys data,time
 import datetime
-now = datetime.datetime.now()
-otherStyleTime = now.strftime("%Y-%m-%d %H:%M:%S")
+
 #read diary
 #def diary_read(f):
 #	print "Your file %r:" % input_file
@@ -24,6 +23,8 @@ otherStyleTime = now.strftime("%Y-%m-%d %H:%M:%S")
 
 # function write
 def diary_write(f):
+	now = datetime.datetime.now()
+	otherStyleTime = now.strftime("%Y-%m-%d %H:%M:%S")
 	current_file = open(input_file, 'a+')
 	line = raw_input("-->")
 	current_file.write("--- %s --- \n" % otherStyleTime)
