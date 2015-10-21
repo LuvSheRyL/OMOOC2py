@@ -185,4 +185,4 @@ r命令判断→打开文件→读文本→关闭
 	current_file.close()`
 
 所以bug解决之。。
-！[](http://i11.tietuku.com/68c362feb5f597c1.jpg)
+![](http://i11.tietuku.com/68c362feb5f597c1.jpg)
