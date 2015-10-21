@@ -58,6 +58,8 @@ Over
 
 >Python程序输出到文件中：[Python程序输出到文件中](http://www.cnblogs.com/sysuoyj/archive/2012/03/14/2395868.html)
 
+>[一张图看懂Python](http://www.pythontab.com/statics/js/ueditor/php/upload1/20150422/14296978024588.png)
+
 ##思路
 既然是记事本的功能，抽丝拨茧，先做最简单的需求功能，再逐步完善优化。
 
@@ -153,3 +155,18 @@ r命令判断→打开文件→读文本→关闭
 + 日期的‘   ’如何消除掉。。。
 
 ![](http://i11.tietuku.com/5680fd4224cf054b.jpg)
+
+## 迭代第一次
+
+感谢[faketooth](https://github.com/faketooth)建议
+	
++ 	`current_file.write("--- %r --- \n" % otherStyleTime)`
+修改成`current_file.write("--- %s --- \n" % otherStyleTime)` 仅输出字符串信息。
++	检查代码中.close的位置，每OPEN一次后就要求close()一次。
+
+###BUG 2
+
+1. 时间调用模块，只在第一次main.py执行时候有效
+2. 无论后续多少循环都无法载入当前时间；
+
+![](http://i11.tietuku.com/15e593aefcdeec81.jpg)

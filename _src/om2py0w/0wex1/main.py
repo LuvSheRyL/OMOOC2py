@@ -1,15 +1,15 @@
-# 2015-10-20 15:51:50
-# version 1.0
+# -*- coding: utf-8 -*-
+# -*- coding: GBK -*-
+# 2015-10-21 14:17:58
+# version 1.1
 # Author:robo_one
 # Function:this script is a diary editor
 # read,write,open,print
-# -*- coding: utf-8 -*-
+
 
 
 from sys import argv
 script , input_file = argv
-
-current_file = open(input_file, 'a')
 
 # import sys data,time
 import datetime
@@ -24,21 +24,22 @@ otherStyleTime = now.strftime("%Y-%m-%d %H:%M:%S")
 
 # function write
 def diary_write(f):
+	current_file = open(input_file, 'a+')
 	line = raw_input("-->")
-	current_file.write("--- %r --- \n" % otherStyleTime)
+	current_file.write("--- %s --- \n" % otherStyleTime)
 	current_file.write(line)
 	current_file.write("\n")
-	
-	print "Save,we'll close it **** "
+	print "Save,we'll save it **** "
 	current_file.close()
 
 def diary_main():
-	current_file = open(input_file, 'a')
+	current_file = open(input_file, 'a+')
 	print "***Press 'w' or 'W' write diary.********\n"
 	print "***Press 'r' or 'R' read all diary.*****\n"
 	a = raw_input("W OR R?")
 	if a=='w' or a=='W':
 		diary_write(current_file)
+		
 	elif a=='r' or a=='R':
 		diary_read = open(input_file,'r')
 		print "Loading..."
@@ -46,6 +47,8 @@ def diary_main():
 		diary_read.close()
 	else:
 		print "Error,plz input w or r?"
+	
+	
 		
 
 while 1:
