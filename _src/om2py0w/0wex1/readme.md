@@ -185,4 +185,14 @@ r命令判断→打开文件→读文本→关闭
 	current_file.close()`
 
 所以bug解决之。。
+<<<<<<< HEAD
 ![](http://i11.tietuku.com/68c362feb5f597c1.jpg)
+=======
+
+![](http://i11.tietuku.com/68c362feb5f597c1.jpg)
+
+## 优秀作品分享
+   [交互日记系统](https://wp-lai.gitbooks.io/learn-python/content/2nDev/diary.html#代码)
+
+    
+>>>>>>> d4a2eedd83b9580df9f80b136e390b0a5eb72c5c
