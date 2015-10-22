@@ -4,4 +4,4 @@
 
 思维导图
 
-![http://i13.tietuku.com/c805caa7ed08d142.png](http://i13.tietuku.com/c805caa7ed08d142.png)
+![导图链接](http://i13.tietuku.com/c805caa7ed08d142.png)
