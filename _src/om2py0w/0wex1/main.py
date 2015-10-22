@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# -*- coding: GBK -*-
+# -*- coding: GB2312 -*-
 # 2015-10-21 14:17:58
 # version 1.1
 # Author:robo_one
@@ -10,11 +10,16 @@
 
 from sys import argv
 script , input_file = argv
+#import markdown style
+#from terminal_markdown_viewer-master import mdv
+
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 # import sys data,time
 import datetime
-now = datetime.datetime.now()
-otherStyleTime = now.strftime("%Y-%m-%d %H:%M:%S")
+
 #read diary
 #def diary_read(f):
 #	print "Your file %r:" % input_file
@@ -24,9 +29,11 @@ otherStyleTime = now.strftime("%Y-%m-%d %H:%M:%S")
 
 # function write
 def diary_write(f):
+	now = datetime.datetime.now()
+	otherStyleTime = now.strftime("%Y-%m-%d %H:%M:%S")
 	current_file = open(input_file, 'a+')
 	line = raw_input("-->")
-	current_file.write("--- %s --- \n" % otherStyleTime)
+	current_file.write("--- 时间%s --- \n" % otherStyleTime)
 	current_file.write(line)
 	current_file.write("\n")
 	print "Save,we'll save it **** "

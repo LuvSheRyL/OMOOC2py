@@ -170,3 +170,25 @@ r命令判断→打开文件→读文本→关闭
 2. 无论后续多少循环都无法载入当前时间；
 
 ![](http://i11.tietuku.com/15e593aefcdeec81.jpg)
+
+修改diary_write函数，调整时间调用语句至diary_write函数中
+
+	`def diary_write(f):
+	now = datetime.datetime.now()
+	otherStyleTime = now.strftime("%Y-%m-%d %H:%M:%S")
+	current_file = open(input_file, 'a+')
+	line = raw_input("-->")
+	current_file.write("--- %s --- \n" % otherStyleTime)
+	current_file.write(line)
+	current_file.write("\n")
+	print "Save,we'll save it **** "
+	current_file.close()`
+
+所以bug解决之。。
+
+![](http://i11.tietuku.com/68c362feb5f597c1.jpg)
+
+## 优秀作品分享
+   [交互日记系统](https://wp-lai.gitbooks.io/learn-python/content/2nDev/diary.html#代码)
+
+    
