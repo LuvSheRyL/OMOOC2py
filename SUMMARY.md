@@ -20,7 +20,7 @@
 * [代码 (_src)](_src/README.md)
    * [笨方法学Python](_src/LPTHW/LPTHW.md)
    * [记事本](_src/om2py0w/0wex1/readme.md)
-	   * [main.py](_src/om2py0w/0wex1/main.py)
+	   * [main.py](_src/om2py0w/0wex1/main.md)
 * [素材 (draft)](draft/README.md)
    * [教程该怎么写](draft/how2tutorial.md)
    * [如何思考](ru_he_si_kao.md)
