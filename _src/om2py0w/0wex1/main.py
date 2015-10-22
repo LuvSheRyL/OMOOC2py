@@ -10,8 +10,6 @@
 
 from sys import argv
 script , input_file = argv
-#import markdown style
-#from terminal_markdown_viewer-master import mdv
 
 import sys
 reload(sys)

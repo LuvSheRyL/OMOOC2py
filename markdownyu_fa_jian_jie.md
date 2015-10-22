@@ -8,7 +8,7 @@ README
 
 ===========================
 
-
+[Haroopad (Markdown编辑器) 0.13.1 官方中文版下载链接](http://www.xz7.com/dir/149111.html#download)
 
 ##<a name="index"/>目录
 * [横线](#line)

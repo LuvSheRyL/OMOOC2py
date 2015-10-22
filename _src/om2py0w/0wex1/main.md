@@ -1,6 +1,7 @@
-#main.py
+## main()
 
-    '# -*- coding: utf-8 -*-
+```
+# -*- coding: utf-8 -*-
 # -*- coding: GB2312 -*-
 # 2015-10-21 14:17:58
 # version 1.1
@@ -12,8 +13,6 @@
 
 from sys import argv
 script , input_file = argv
-#import markdown style
-#from terminal_markdown_viewer-master import mdv
 
 import sys
 reload(sys)
@@ -62,4 +61,6 @@ def diary_main():
 
 while 1:
 	diary_main()
-	'
+	
+
+```

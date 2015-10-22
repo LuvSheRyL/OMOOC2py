@@ -19,8 +19,10 @@
 * [人生首秀](3rDemo/README.md)
 * [代码 (_src)](_src/README.md)
    * [笨方法学Python](_src/LPTHW/LPTHW.md)
-   * [记事本](_src/om2py0w/0wex1/readme.md)
-	   * [main.py](_src/om2py0w/0wex1/main.md)
+   * [记事本CLI](_src/om2py0w/0wex1/readme.md)
+     * [main.py](_src/om2py0w/0wex1/main.md) 
+   * [记事本GUI](_src/om2py2w/2wex0/readme.md)
+	  
 * [素材 (draft)](draft/README.md)
    * [教程该怎么写](draft/how2tutorial.md)
    * [如何思考](ru_he_si_kao.md)
