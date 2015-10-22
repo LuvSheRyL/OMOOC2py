@@ -13,7 +13,7 @@
 * [随堂记录](0MOOC/README.md)
    * [第一课](0MOOC/2015_10_10.md)
    * [第二课](0MOOC/di_er_ke.md)
-   * [第三课](OMOOC/2015_10_22.md)
+   * [第三课](0MOOC/2015_10_22.md)
 * [基础旋进](1sTry/README.md)
 * [迭代作品](2nDev/README.md)
 * [人生首秀](3rDemo/README.md)
