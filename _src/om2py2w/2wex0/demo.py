@@ -1,10 +1,3 @@
-#!/usr/bin/env python
-#-*- encoding:utf-8 -*-
-#一个日记本的GUI程序
-#作者：robo_one
-#日期：2015年10月23日
-#版本：V1.0
-
 #A Simple Hello World Program
 from Tkinter import *
 
