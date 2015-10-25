@@ -16,6 +16,7 @@
    * [第二课](0MOOC/di_er_ke.md)
    * [第三课](0MOOC/2015_10_22.md)
 	   * [Win安装ipython&Notebook配置](0MOOC/ipython_notebook.md)
+	   * [杭州C2T2面基](0MOOC/hz_c2t2_mj.md)
 * [基础旋进](1sTry/README.md)
 * [迭代作品](2nDev/README.md)
 * [人生首秀](3rDemo/README.md)
