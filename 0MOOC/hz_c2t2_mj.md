@@ -5,7 +5,7 @@
 >	小赖
 >	robo_one
 >	ted
-
+> 感谢ted提供录音，链接: 2wd0C2T2Hangzhou.MP3 密码: openmind
     
 ## 关于中文编码
 
