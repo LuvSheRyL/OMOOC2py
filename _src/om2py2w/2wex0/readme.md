@@ -1,4 +1,4 @@
-# 日记本GUI
+# GUI
 
 > [Tkinter什么鬼](https://docs.python.org/2.7/library/tkinter.html?highlight=tkinter)
 
@@ -13,3 +13,9 @@
 > [Python Tkinter Frame](http://www.tutorialspoint.com/python/tk_frame.htm "Python Tkinter Frame")
 > 
 > [Layout management in Tkinter](http://zetcode.com/gui/tkinter/layout/ "Layout management in Tkinter")
+> 
+> [An Introduction to Tkinter (Work in Progress)](http://effbot.org/tkinterbook/)
+> 
+> [The Tkinter Scrollbar Widget](http://effbot.org/tkinterbook/scrollbar.htm )
+	 
+> + **get()** Gets the current slider position.Offset 0.0 means that the slider is in its topmost (or leftmost) position, and offset 1.0 means that it is in its bottommost (or rightmost) position.

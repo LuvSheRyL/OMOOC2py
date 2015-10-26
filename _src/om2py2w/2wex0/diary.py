@@ -10,7 +10,6 @@ root=None
  
 def die():
  sys.exit(0)
- print "exit"
  
 def about():
  tkMessageBox.showinfo("Tkeditor","V1.0\n"
@@ -27,17 +26,17 @@ class editor:
   self.bar=Menu(rt)
    
   self.filem=Menu(self.bar)
-  self.filem.add_command(label="æ‰“å¼€",command=self.openfile)
-  self.filem.add_command(label="æ–°å»º",command=neweditor)
-  self.filem.add_command(label="ä¿å­˜",command=self.savefile)
-  self.filem.add_command(label="å…³é—­",command=self.close)
+  self.filem.add_command(label="´ò¿ª",command=self.openfile)
+  self.filem.add_command(label="ĞÂ½¨",command=neweditor)
+  self.filem.add_command(label="±£´æ",command=self.savefile)
+  self.filem.add_command(label="¹Ø±Õ",command=self.close)
   self.filem.add_separator()
-  self.filem.add_command(label="é€€å‡º",command=die)
+  self.filem.add_command(label="ÍË³ö",command=die)
    
   self.helpm=Menu(self.bar)
-  self.helpm.add_command(label="å…³äº",command=about)
-  self.bar.add_cascade(label="æ–‡ä»¶",menu=self.filem)
-  self.bar.add_cascade(label="å¸®åŠ©",menu=self.helpm)
+  self.helpm.add_command(label="¹ØÓÚ",command=about)
+  self.bar.add_cascade(label="ÎÄ¼ş",menu=self.filem)
+  self.bar.add_cascade(label="°ïÖú",menu=self.helpm)
   self.t.config(menu=self.bar)
    
   self.f=Frame(self.t,width=512)
@@ -48,11 +47,10 @@ class editor:
   
  def close(self):
   self.t.destroy()
-  print "close"
   
  def openfile(self):
   p1=END
-  oname=askopenfilename(filetypes=[("Python file","*.*")])
+  oname=askopenfilename(filetypes=[("Python file","*.txt")])
   if oname:
    for line in fileinput.input(oname):
     self.st.insert(p1,line)
