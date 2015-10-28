@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
-# 2015年10月28日09:51:35
-# version 1.1
+# 2015年10月29日 00:49:33
+# version 1.2
 # Author:robo_one
 # Function:this script is a diary editor
+# 增加文本字体
 
 
 # 导入Tk GUI模块
@@ -36,6 +37,9 @@ class diary(Frame):
     self.t.title("窗口- %d"%len(t1))
     Frame.__init__(self,rt)
     self.pack(fill=BOTH, expand=1)
+    
+    #self.ent=Entry(master)    #http://effbot.org/tkinterbook/entry.htm
+    #self.ent.pack(expand=1,fill=BOTH)
 
     '''定义按钮'''
     '''Possible values are specified as compass directions:
@@ -51,6 +55,10 @@ class diary(Frame):
     self.f.pack(expand=1,fill=BOTH)
    
     self.st=ScrolledText(self.f,background="beige")
+    self.st.tag_configure('bold_italics', font=('Arial', 12, 'bold', 'italic'))
+    self.st.tag_configure('big', font=('Verdana', 20, 'bold'))
+    self.st.tag_configure('color', foreground='#476042', 
+                        font=('Tempus Sans ITC', 12, 'bold'))
     self.st.pack(side=LEFT,fill=BOTH,expand=1)
     
     self.open = Button(self)
@@ -100,7 +108,7 @@ class diary(Frame):
     print txt_read
     if oname:
      for line in txt_read:  #fileinput.input(oname): 更新为
-      self.st.insert(p1,line)
+      self.st.insert(p1,line,'color')
     
     '''
     if oname:
@@ -128,13 +136,13 @@ class diary(Frame):
   
  def close(self):
   self.t.destroy() #注意此处销毁当前窗口
-  print "close"
+  print u"关闭窗口"
 
  def about1(self):
-  tkMessageBox.showinfo("小小记事本","V1.0\n"
-  "创建于2015年10月26日\n"
+  tkMessageBox.showinfo("小小记事本","V1.1\n"
+  "创建于2015年10月29日\n"
   "作者：robo_one")
-  print u"关于"
+  print u"-关于-" *3
 
 def neweditor():
   global root
