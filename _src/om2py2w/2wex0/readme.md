@@ -28,6 +28,8 @@
  
 > + self在Python里不是关键字。self代表当前对象的地址。self能避免非限定调用造成的全局变量。
 
+
+> [http://blog.csdn.net/zhaoweikid/article/details/1642015](http://blog.csdn.net/zhaoweikid/article/details/1642015)
 ## V1.0 基本功能实现
 + 打开文件
 + 保存文件
@@ -172,3 +174,61 @@
 + 直接打开其他中文字符的文件，输出乱码。
  - 参考[Python字符编码详解](http://www.cnblogs.com/huxi/archive/2010/12/05/1897271.html)
  - [官方资料Standard Encodings](https://docs.python.org/2/library/codecs.html#standard-encodings)
+
+
+## V1.1 更新布局
+
+###代码
++  修改各组件的执行代码顺序
++  熟悉anchor参数， n, ne, e, se, s, sw, w, nw, or center
++  写文件增加时间戳
++  关于按钮尝试增加lambda表达式
++  增加新建（有Bug） 
+
+![](http://i11.tietuku.com/6817f708103ef12c.jpg)
+----------
+
+
+    self.f=Frame(self,width=512)
+    self.f.pack(expand=1,fill=BOTH)
+   
+    self.st=ScrolledText(self.f,background="gray")
+    self.st.pack(side=LEFT,fill=BOTH,expand=1)
+    
+    self.open = Button(self)
+    self.open["text"] = "打开文件"
+    self.open["fg"] = "Blue"
+    self.open["command"] = self.diary_open_txt
+    self.open.pack({"side":"left"})
+    self.open.pack({"anchor":"nw"})
+    
+    self.newfile = Button(self)
+    self.newfile["text"] = "新建"
+    self.newfile["fg"] = "black"
+    self.newfile["command"] = neweditor
+    self.newfile.pack({"side":"left"})
+    self.newfile.pack({"anchor":"nw"})
+   
+    self.save = Button(self)
+    self.save["text"] = "保存"
+    self.save["fg"] = "black" 
+    self.save["command"] = self.savefile
+    self.save.pack({"side":"left"})
+    self.save.pack({"anchor":"n"})
+    
+    self.quit = Button(self)
+    self.quit["text"] = "关闭"
+    self.quit["fg"] = "red"
+    self.quit["command"] = self.close
+    self.quit.pack({"side":"left"})
+    self.quit.pack({"anchor":"center"})
+
+    self.guan_yu = Button(self)
+    self.guan_yu["text"] = "关于"
+    self.guan_yu["fg"] = "red"
+    self.guan_yu["command"] = lambda:self.about1()
+    '''lambda后面跟的是表达式,注意调用函数需要增加()
+    可以多试试它，挺不错的'''
+    self.guan_yu.pack({"side":"right"})
+    self.guan_yu.pack({"anchor":"center"})
+        

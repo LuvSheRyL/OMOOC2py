@@ -46,6 +46,13 @@ class editor:
   self.st=ScrolledText(self.f,background="white")
   self.st.pack(side=LEFT,fill=BOTH,expand=1)
   
+  self.open = Button(self)
+  self.open["text"] = "open"   
+  self.open["fg"] = "Blue"
+  self.open["command"] = self.openfile
+  self.open.pack({"side":"left"})
+  self.open.pack({"anchor":"nw"})
+  
  def close(self):
   self.t.destroy()
   print "close"
