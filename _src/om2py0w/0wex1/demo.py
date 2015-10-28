@@ -1,14 +1,16 @@
-# _*_ coding: utf-8 _*_
-# magic comment
+from Tkinter import *
 
+def onclick():
+   pass
 
+root = Tk()
+text = Text(root)
+text.insert(INSERT, "Hello.....")
+text.insert(END, "Bye Bye.....")
+text.pack()
 
-print u"2015年10月25日"
-a = u'a 2015年10月25日'
-b = 'b 二〇一五年十月二十五日'
-
-print a
-a_utf_8 = a.encode('GBK')
-b_gbk = b.encode('GBK')
-print a_utf_8
-print b_gbk
+text.tag_add("here", "1.0", "1.4")
+text.tag_add("start", "1.8", "1.13")
+text.tag_config("here", background="yellow", foreground="blue")
+text.tag_config("start", background="black", foreground="green")
+root.mainloop()

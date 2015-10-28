@@ -50,7 +50,7 @@ class diary(Frame):
     self.f=Frame(self,width=512)
     self.f.pack(expand=1,fill=BOTH)
    
-    self.st=ScrolledText(self.f,background="gray")
+    self.st=ScrolledText(self.f,background="beige")
     self.st.pack(side=LEFT,fill=BOTH,expand=1)
     
     self.open = Button(self)
@@ -95,12 +95,12 @@ class diary(Frame):
  def diary_open_txt(self):
     p1=END
     oname=askopenfilename(filetypes=[("文本文件","*.txt*")])
-    txt_open=codecs.open(oname, 'r', "gb2312")
-    txt_read=txt_open.readlines()
+    txt_open=codecs.open(oname, 'r', "GB2312")
+    txt_read=txt_open.read()
     print txt_read
     if oname:
-        for line in txt_open.readlines():  #fileinput.input(oname): 更新为
-         self.st.insert(p1,line)
+     for line in txt_read:  #fileinput.input(oname): 更新为
+      self.st.insert(p1,line)
     
     '''
     if oname:
@@ -118,6 +118,7 @@ class diary(Frame):
    ofp=open(sname,"w")
    now = datetime.datetime.now()    #添加时间
    otherStyleTime = now.strftime("%Y-%m-%d %H:%M:%S")
+   ofp.write("\n\r")
    ofp.write(u"--- 时间%s --- " % otherStyleTime + "\n")
    ofp.write(self.st.get(1.0,END))
 

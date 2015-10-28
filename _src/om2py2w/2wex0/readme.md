@@ -1,35 +1,5 @@
 # Py Class.Tk-GUI 日记本
 
-> [Tkinter什么鬼](https://docs.python.org/2.7/library/tkinter.html?highlight=tkinter)
-
-> [《Practical Programming in Tcl and Tk》](http://www.beedub.com/book/ "Practical Programming in Tcl and Tk")
-> [关于Tk中pack的理解](http://my.oschina.net/annieduoduo/blog/71400) 
-> 
-> + 其实就是一个自适应的窗口容器
-> + [TkDocs-最全资料](http://www.tkdocs.com/tutorial/index.html "TkDocs")
->
-> [Tkinter pack_layout布局案例](http://my.oschina.net/ScottYang/blog/57192 "Tkinter pack_layout")
-> 
-> [Python Tkinter Frame](http://www.tutorialspoint.com/python/tk_frame.htm "Python Tkinter Frame")
-> 
-> [Layout management in Tkinter](http://zetcode.com/gui/tkinter/layout/ "Layout management in Tkinter")
-> 
-> [An Introduction to Tkinter (Work in Progress)](http://effbot.org/tkinterbook/)
-> 
-> [The Tkinter Scrollbar Widget](http://effbot.org/tkinterbook/scrollbar.htm )
-	 
-> + **get()** Gets the current slider position.Offset 0.0 means that the slider is in its topmost (or leftmost) position, and offset 1.0 means that it is in its bottommost (or rightmost) position.
-> + [关于 class中的 _ _init_ _](https://docs.python.org/2.7/reference/datamodel.html#object.__init__)
-
-> [Python类的函数为什么要有self参数？](http://www.cnblogs.com/wangkangluo1/archive/2011/09/23/2186479.html) **显胜于隐的哲学思想~~**
-> 
-> + [What-is-the-purpose-of-self-in-python](http://stackoverflow.com/questions/2709821/what-is-the-purpose-of-self-in-python)
->  - [Thomas-wouters的最佳回答](http://stackoverflow.com/users/17624/thomas-wouters):Python's all for making things explicit, making it obvious what's what, and although it doesn't do it entirely everywhere, it does do it for instance attributes. That's why assigning to an instance attribute needs to know what instance to assign to, and that's why it needs self..
- 
-> + self在Python里不是关键字。self代表当前对象的地址。self能避免非限定调用造成的全局变量。
-
-
-> [http://blog.csdn.net/zhaoweikid/article/details/1642015](http://blog.csdn.net/zhaoweikid/article/details/1642015)
 ## V1.0 基本功能实现
 + 打开文件
 + 保存文件
@@ -176,7 +146,7 @@
  - [官方资料Standard Encodings](https://docs.python.org/2/library/codecs.html#standard-encodings)
 
 
-## V1.1 更新布局
+## V1.1 更新
 
 ###代码
 +  修改各组件的执行代码顺序
@@ -184,8 +154,9 @@
 +  写文件增加时间戳
 +  关于按钮尝试增加lambda表达式
 +  增加新建（有Bug） 
++  更正GB2312编码文本的输出问题
 
-![](http://i11.tietuku.com/6817f708103ef12c.jpg)
+![](http://i11.tietuku.com/451ba10adb620be6.jpg)
 ----------
 
 
@@ -232,3 +203,51 @@
     self.guan_yu.pack({"side":"right"})
     self.guan_yu.pack({"anchor":"center"})
         
+## V1.1BUG
++ 新建窗口无法打开新的窗口，而是在原窗口下方新建
+![](http://i11.tietuku.com/6167a9c30d714899.jpg)
+
+
+
+# 感想
++ Python思想：不论函数命名、类、变量的定义力求简单明了
++ Tk.pack布局太坑了~反人类的设计，我想要的是所见即所得的GUI，目前了解的有
+ + [PyQT](https://wiki.python.org/moin/PyQt)
+ + [kivy](http://kivy.org/)
+   -  [github_kivy](https://github.com/kivy/kivy)
++  
++ 未完待续
+
+# 参考资料
+
+> [Tkinter什么鬼](https://docs.python.org/2.7/library/tkinter.html?highlight=tkinter)
+
+> [《Practical Programming in Tcl and Tk》](http://www.beedub.com/book/ "Practical Programming in Tcl and Tk")
+> [关于Tk中pack的理解](http://my.oschina.net/annieduoduo/blog/71400) 
+> 
+> + 其实就是一个自适应的窗口容器
+> + [TkDocs-最全资料](http://www.tkdocs.com/tutorial/index.html "TkDocs")
+>
+> [Tkinter pack_layout布局案例](http://my.oschina.net/ScottYang/blog/57192 "Tkinter pack_layout")
+> 
+> [Python Tkinter Frame](http://www.tutorialspoint.com/python/tk_frame.htm "Python Tkinter Frame")
+> 
+> [Layout management in Tkinter](http://zetcode.com/gui/tkinter/layout/ "Layout management in Tkinter")
+> 
+> [An Introduction to Tkinter (Work in Progress)](http://effbot.org/tkinterbook/)
+> 
+> [The Tkinter Scrollbar Widget](http://effbot.org/tkinterbook/scrollbar.htm )
+	 
+> + **get()** Gets the current slider position.Offset 0.0 means that the slider is in its topmost (or leftmost) position, and offset 1.0 means that it is in its bottommost (or rightmost) position.
+> + [关于 class中的 _ _init_ _](https://docs.python.org/2.7/reference/datamodel.html#object.__init__)
+
+> [Python类的函数为什么要有self参数？](http://www.cnblogs.com/wangkangluo1/archive/2011/09/23/2186479.html) **显胜于隐的哲学思想~~**
+> 
+> + [What-is-the-purpose-of-self-in-python](http://stackoverflow.com/questions/2709821/what-is-the-purpose-of-self-in-python)
+>  - [Thomas-wouters的最佳回答](http://stackoverflow.com/users/17624/thomas-wouters):Python's all for making things explicit, making it obvious what's what, and although it doesn't do it entirely everywhere, it does do it for instance attributes. That's why assigning to an instance attribute needs to know what instance to assign to, and that's why it needs self..
+ 
+> + self在Python里不是关键字。self代表当前对象的地址。self能避免非限定调用造成的全局变量。
+
+
+> [Python自然语言编码转换](http://blog.csdn.net/zhaoweikid/article/details/1642015)
+
