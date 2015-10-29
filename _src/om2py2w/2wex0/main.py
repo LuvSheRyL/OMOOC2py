@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
-# 2015年10月29日 00:49:33
-# version 1.2
+# 2015年10月29日09:36:06
+# version 1.3
 # Author:robo_one
 # Function:this script is a diary editor
 # 增加文本字体
+# 增加entry语句
 
 
 # 导入Tk GUI模块
@@ -38,8 +39,7 @@ class diary(Frame):
     Frame.__init__(self,rt)
     self.pack(fill=BOTH, expand=1)
     
-    #self.ent=Entry(master)    #http://effbot.org/tkinterbook/entry.htm
-    #self.ent.pack(expand=1,fill=BOTH)
+
 
     '''定义按钮'''
     '''Possible values are specified as compass directions:
@@ -98,6 +98,18 @@ class diary(Frame):
     self.guan_yu.pack({"side":"right"})
     self.guan_yu.pack({"anchor":"center"})
 
+    self.contents = StringVar()
+    self.ent=Entry(self,textvariable=self.contents)    #http://effbot.org/tkinterbook/entry.htm
+    self.ent.pack({"side":"bottom"},expand=1,fill='x')
+    self.ent.bind("<Enter>",self.entry_enter)
+    
+ def entry_enter(self,event):
+    entry_text = self.contents.get()
+    print entry_text
+    self.st.insert(END,entry_text)
+    self.ent.delete(0,'end') #输入完成清空输入框信息
+    
+
 
 #定义打开文件函数    
  def diary_open_txt(self):
@@ -108,7 +120,7 @@ class diary(Frame):
     print txt_read
     if oname:
      for line in txt_read:  #fileinput.input(oname): 更新为
-      self.st.insert(p1,line,'color')
+      self.st.insert(p1,line,'color') #调用字体
     
     '''
     if oname:
@@ -117,11 +129,11 @@ class diary(Frame):
          '''
 
     self.t.title(oname)
-    
+    txt_open.close()
 
  
  def savefile(self):
-  sname=asksaveasfilename()
+  sname=asksaveasfilename(title="保存为txt",filetypes=[("文本文件","*.txt")])
   if sname:
    ofp=open(sname,"w")
    now = datetime.datetime.now()    #添加时间
@@ -144,6 +156,9 @@ class diary(Frame):
   "作者：robo_one")
   print u"-关于-" *3
 
+
+
+  
 def neweditor():
   global root
   t1.append(diary(root))
@@ -152,4 +167,4 @@ if __name__=="__main__":
  root=None
  t1.append(diary(root))
  root=t1[0].t
-root.mainloop()
+ root.mainloop()

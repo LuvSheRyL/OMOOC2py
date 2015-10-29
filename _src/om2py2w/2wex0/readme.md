@@ -1,4 +1,4 @@
-# Py Class.Tk-GUI 日记本
+# Py Tkinter-GUI 日记本
 
 ## V1.0 基本功能实现
 + 打开文件
@@ -6,11 +6,15 @@
 + 关闭窗口
 + 关于（messagebox实现）
 
-代码是参考一个小例子修改过来的，它是用menu执行，我修改为按钮的方式，
+ 代码是参考一个小例子修改过来的，它是用menu执行，我修改为按钮的方式，
 参考案例Menu方式实现效果
-![](http://i11.tietuku.com/107950c226186fed.jpg)
-我修改后的实现效果，界面粗暴，权当学习。
-![](http://i11.tietuku.com/fc474516d6ac8840.jpg)
+
+ ![](http://i11.tietuku.com/107950c226186fed.jpg)
+
+ 
+ 我修改后的实现效果，界面粗暴，权当学习。
+
+ ![](http://i11.tietuku.com/fc474516d6ac8840.jpg)
 
 附V1.0 我的源代码
 
@@ -213,8 +217,9 @@
 + Python思想：不论函数命名、类、变量的定义力求简单明了
 + Tk.pack布局太坑了~反人类的设计，我想要的是所见即所得的GUI，目前了解的有
  + [PyQT](https://wiki.python.org/moin/PyQt)
- + [kivy](http://kivy.org/)
+ + [Kivy](http://kivy.org/)
    -  [github_kivy](https://github.com/kivy/kivy)
+ + [Wxpython](http://wiki.wxpython.org/Getting%20Started)
 +  
 + 未完待续
 

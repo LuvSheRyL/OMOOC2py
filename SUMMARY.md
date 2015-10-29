@@ -11,6 +11,7 @@
        * [npm安装](npmanzhuang_tu_wen_jiao_cheng_md.md)
        * [NPM和Node安装](winxia_an_zhuang_npm_he_node_md.md)
        * [使用 Notepad++ 编辑运行 Python 程序](http://blog.sina.com.cn/s/blog_4b5039210100kmtb.html)
+       * [Pydoc for Win_CMD](0MOOC/pydoc_path.md)
 * [随堂记录](0MOOC/README.md)
    * [第一课](0MOOC/2015_10_10.md)
    * [第二课](0MOOC/di_er_ke.md)

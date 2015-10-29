@@ -1,21 +1,21 @@
-#!/usr/bin/env python
-#-*- encoding:utf-8 -*-
+# coding=utf-8
+import Tkinter as tk
 
-from Tkinter import *
-class App(Frame):
-    def __init__(self, master=None):
-        Frame.__init__(self, master)
-        self.pack()
+root = tk.Tk()
+tk.Label(root,text="Hello World").pack()
 
+var = tk.StringVar(value="Hi, what's up")
 
-# create the application
-myapp = App()
+text_input = tk.Entry(root,textvariable=var)
+text_input.pack()
 
-#
-# here are method calls to the window manager class
-#
-myapp.master.title("中文My Do-Nothing Application")
-myapp.master.maxsize(1000, 1000)
+def print_content():
+    print var.get()
+#    var.set('')
+tk.Button(root,text="print",command=print_content).pack()
+root.bind('<Return>',lambda event:print_content())
 
-# start the program
-myapp.mainloop()
+text_output = tk.Message(root,textvariable=var) # 将textvariable设为var
+text_output.pack()
+
+root.mainloop()
