@@ -1,7 +1,8 @@
 # 网络版日志
+
 ## 功能
 
-  需求如下:
+### 需求如下:
 
 + 每次运行时合理的打印出过往的所有笔记
 + 一次接收输入一行笔记
@@ -9,12 +10,110 @@
 + 在所有访问的客户端可以获得历史笔记
 + 支持多个客户端同时进行笔记记录
 
-备选的:
+#### 备选的:
 
 + 如果有余力!-)
 + 请尝试思考,是否能保存笔记的客户端来源?
 + 并在合适的情景中输出?
 + 进一步的,能根据客户端不同,要求输出不同客户端提交的笔记嘛
+
+
+_ _ _
+
++ 首先先明确如何进行网络开发?
++ 什么是 UDP 协议?
++ 用 Python 完成一对最简单的 DUP 服务器/客户端
+
+
+
+OK 各个击破，==什么是网络编程开发？==
+网络编程开发就得开始解释Python中的socket库，具体用法可参考官方doc,官方解释：
+	
+	socket DESCRIPTION
+    This module provides socket operations and some related functions.
+    On Unix, it supports IP (Internet Protocol) and Unix domain sockets.
+    On other systems, it only supports IP. Functions specific for a
+    socket are available as methods of the socket object.
+
+好比在我们打电话，对方号码就是IP地址，分机号就是端口port，socket就是电话交换机的功能了。==**每对**==socket必须包括源端IP/PORT，目的端IP/PORT.
+当我们（客户端1）要给一个妹子(客户端2)的打电话时，我们需要请求服务器（妹纸她妈）上的--socket(),
+用法如下：==socket.socket()== , 联系上她妈这条线有两种方式，一种通过TCP（Transmission Control Protocol 传输控制协议）协议，一种通过UDP(User Datagram Protocol用户数据报协议)协议。
+
+	
+
+	|  socket([family[, type[, proto]]]) -> socket object
+	|
+	|  Open a socket of the given type.  The family argument specifies the
+	|  address family; it defaults to AF_INET.  The type argument specifies
+	|  whether this is a stream (SOCK_STREAM, this is the default)
+	|  or datagram (SOCK_DGRAM) socket.  The protocol argument defaults to 0,
+	|  specifying the default protocol.  Keyword arguments are accepted.
+	|
+	|  A socket object represents one endpoint of a network connection.
+
+且先不管这协议细节，只要记住TCP比UDP传输靠谱，少量信息时UDP比TCP快，但是容易丢信息。具体差异参考[TCP/IP协议与UDP协议的区别](http://zhangjiangxing-gmail-com.iteye.com/blog/646880)
+
+OK，回到我们[Python socket.socket()](https://docs.python.org/2.7/library/socket.html)环境中，仅需了解`socket.SOCK_STREAM`为TCP协议，`socket.SOCK_DGRAM`为UDP协议
+
+
+### 客户端使用 
+
+在Python中用法，库调用
+
+```
+	import socket
+	s = socket.socket(socket.PF_INET, socket.SOCK_DGRAM)
+
+```
+
+搭好线后，开始“告知”她妈妈，自己的IP,PORT（电话号码，分机号）（端口(分机号)范围为0-65535”，但是公认端口建议不要选择，系统自己的，你懂的~
+ - 公认的Port：0～1023
+ - 注册的Port：1024～49151 
+ - 动态的Port：49 152～65535
+
+例如
+```
+	s.bind(("127.0.0.1", 5005))
+
+```
+当然你可以选择不这么做，让系统进程自动给你“分配”随机闲置的端口，及其根据该端口选择的源IP`s.bind(('', 0))`  参考[《 客户端 用不用 bind 的区别》](http://blog.chinaunix.net/uid-23193900-id-3199173.html)
+
+准备工作完成后，开始“拨号”妹纸……的……她妈了（server）~~
+```
+	s.connect(("127.0.0.1", 5005))   #方便测试用本地主机地址
+
+```
+说些啥呢……
+
+```
+MESSAGE =  u"Hey Girl"    # 小伙子，你找shi呢~
+s.sendto(MESSAGE, ("127.0.0.1", 5005)) # 表示她妈号码
+```
+
+勇气可嘉，你可以挂电话了~
+```
+s.close()
+```
+至此，小伙子这边的事情完成，剩下的看她妈的了~
+
+### 服务器端使用
+在新建一个Python文件作为服务器端
+```
+	import socket
+	UDP_IP = "127.0.0.1"
+	UDP_PORT = 5005
+
+	sock = socket.socket(socket.AF_INET, # Internet，
+                     socket.SOCK_DGRAM) # UDP协议
+	sock.bind((UDP_IP, UDP_PORT))
+	#AF_INET表示address family地址族,兼容IPv4,IPv6地址
+	while True:
+     data, addr = sock.recvfrom(1024) # 默认buffer size is 1024 bytes
+     print "received message:", data  #完成这条命令后，小伙子心情一定是复杂的
+
+```
+
+
 
 ----------
 
@@ -43,3 +142,5 @@
 > [Python_socket](https://docs.python.org/2.7/library/socket.html)
 > 
 > [《Python socket编程_haodi_新浪博客》](http://blog.sina.com.cn/s/blog_523491650100hikg.html)
+
+> [Socket Programming HOWTO](https://docs.python.org/2/howto/sockets.html)

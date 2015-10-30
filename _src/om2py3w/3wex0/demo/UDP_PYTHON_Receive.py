@@ -1,4 +1,8 @@
+# -*- coding: utf-8 -*-
 import socket
+import sys,codecs
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 UDP_IP = "127.0.0.1"
 UDP_PORT = 5005
