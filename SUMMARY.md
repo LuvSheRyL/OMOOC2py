@@ -1,7 +1,8 @@
-# Summary
+# 目录
 
 * [简介](README.md)
    * [Markdown语法简介](markdownyu_fa_jian_jie.md)
+   		* [【转】Markdown新增文件目录](https://wp-lai.gitbooks.io/learn-python/content/0MOOC/doctoc.html)
    * [环境配置](kexue_shang_wang_md.md)
        * [科学上网](ke_xue_shang_wang.md)
        * [Gitbook与Github互推](gitbookyu_github_hu_tui.md)
@@ -18,6 +19,7 @@
    * [第三课](0MOOC/2015_10_22.md)
 	   * [Win安装ipython&Notebook配置](0MOOC/ipython_notebook.md)
 	   * [杭州C2T2面基](0MOOC/hz_c2t2_mj.md)
+   * [第四课](0MOOC/2015_10_30.md)
 * [基础旋进](1sTry/README.md)
 * [迭代作品](2nDev/README.md)
 * [人生首秀](3rDemo/README.md)
@@ -26,6 +28,7 @@
    * [记事本CLI](_src/om2py0w/0wex1/readme.md)
      * [main.py](_src/om2py0w/0wex1/main.md) 
    * [记事本GUI](_src/om2py2w/2wex0/readme.md)
+   * [网络记事本](_src/om2py3w/3wex0/readme.md)
 	  
 * [素材 (draft)](draft/README.md)
    * [教程该怎么写](draft/how2tutorial.md)

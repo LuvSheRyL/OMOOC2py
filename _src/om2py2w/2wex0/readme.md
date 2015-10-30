@@ -1,3 +1,19 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Py Tkinter-GUI 日记本](#py-tkinter-gui-%E6%97%A5%E8%AE%B0%E6%9C%AC)
+  - [V1.0 基本功能实现](#v10-%E5%9F%BA%E6%9C%AC%E5%8A%9F%E8%83%BD%E5%AE%9E%E7%8E%B0)
+  - [V1.0 BUG](#v10-bug)
+  - [V1.1 更新](#v11-%E6%9B%B4%E6%96%B0)
+    - [代码](#%E4%BB%A3%E7%A0%81)
+  - [![](http://i11.tietuku.com/451ba10adb620be6.jpg)](#httpi11tietukucom451ba10adb620be6jpg)
+  - [V1.1BUG](#v11bug)
+- [感想](#%E6%84%9F%E6%83%B3)
+- [参考资料](#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Py Tkinter-GUI 日记本
 
 ## V1.0 基本功能实现
