@@ -6,7 +6,7 @@ sys.setdefaultencoding('utf-8')
 
 UDP_IP = "127.0.0.1"
 UDP_PORT = 5005
-MESSAGE =  u"Hey Girl"
+MESSAGE =  raw_input("Plz input:")
 
 print "UDP target IP:", UDP_IP
 print "UDP target port:", UDP_PORT

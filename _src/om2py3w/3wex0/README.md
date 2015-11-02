@@ -113,7 +113,64 @@ s.close()
 
 ```
 
+## Version 1.0 连接
 
+效果图
+![](http://i13.tietuku.com/fa76b6ae8a200ba7.jpg)
+
+1. 先运行服务器程序`Python main_server.py`
+2. 再运行客户端程序`Python main_c.py`
+3. 在客户端输入消息，回车发送
+
+'''客户端代码
+    
+    # -*- coding: utf-8 -*-
+    import socket
+    import sys,codecs
+    reload(sys)
+    sys.setdefaultencoding('GB2312') #在CMD中运行编码为GB2312，在Python中应修改为UTF-8
+
+    UDP_IP = "127.0.0.1"
+    UDP_PORT = 5005
+    MESSAGE =  raw_input("Plz input:")
+
+    print "UDP target IP:", UDP_IP
+    print "UDP target port:", UDP_PORT
+    print "已发送信息:", MESSAGE
+
+    sock = socket.socket(socket.AF_INET, # Internet地址族
+                         socket.SOCK_DGRAM) # UDP协议
+    sock.sendto(MESSAGE, (UDP_IP, UDP_PORT))
+    sock.close()
+
+'''
+'''服务器端代码
+    
+    
+    # -*- coding: utf-8 -*-
+    import socket
+    import sys,codecs
+    reload(sys)
+    sys.setdefaultencoding('GB2312')
+
+    UDP_IP = "127.0.0.1"
+    UDP_PORT = 5005
+
+    def server_con():
+        sock = socket.socket(socket.AF_INET, # Internet
+                         socket.SOCK_DGRAM) # UDP
+        sock.bind((UDP_IP, UDP_PORT))
+        data, addr = sock.recvfrom(1024) # buffer size is 1024 bytes
+        print "已接收信息:", data, "来自", addr
+
+
+    while True:
+        server_con()
+
+        
+
+
+'''
 
 ----------
 
