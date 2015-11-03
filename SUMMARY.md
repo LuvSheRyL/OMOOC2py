@@ -2,7 +2,7 @@
 
 * [简介](README.md)
    * [Markdown语法简介](markdownyu_fa_jian_jie.md)
-   		* [【转】Markdown新增文件目录](https://wp-lai.gitbooks.io/learn-python/content/0MOOC/doctoc.html)
+   	* [【转】Markdown新增文件目录](https://wp-lai.gitbooks.io/learn-python/content/0MOOC/doctoc.html)
    * [环境配置](kexue_shang_wang_md.md)
        * [科学上网](ke_xue_shang_wang.md)
        * [Gitbook与Github互推](gitbookyu_github_hu_tui.md)
@@ -28,7 +28,7 @@
    * [记事本CLI](_src/om2py0w/0wex1/readme.md)
      * [main.py](_src/om2py0w/0wex1/main.md) 
    * [记事本GUI](_src/om2py2w/2wex0/readme.md)
-   * [网络记事本](_src/om2py3w/3wex0/readme.md)
+   * [网络记事本](_src/om2py3w/3wex0/README.md)
 	  
 * [素材 (draft)](draft/README.md)
    * [教程该怎么写](draft/how2tutorial.md)
