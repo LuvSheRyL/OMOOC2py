@@ -31,9 +31,8 @@ def diary_write(f):
     otherStyleTime = now.strftime("%Y-%m-%d %H:%M:%S")
     #current_file = open(input_file, 'a+')
     line = raw_input("-->")
-    f.write(u"--- 时间%s --- \n" % otherStyleTime)
-    f.write(line)
-    f.write("\n")
+    f.write(u"--- 时间%s --- \n" % otherStyleTime + line +"\n")
+
     print "Save,we'll save it **** "
     f.close()
 

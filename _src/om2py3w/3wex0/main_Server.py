@@ -8,7 +8,7 @@ reload(sys)
 sys.setdefaultencoding('GB2312') #适用于win-cmd运行
 
 UDP_IP = "127.0.0.1"
-UDP_PORT = 5005
+UDP_PORT = 9527
 
 sock = socket.socket(socket.AF_INET, # Internet
                      socket.SOCK_DGRAM) # UDP
@@ -17,34 +17,39 @@ data, addr = sock.recvfrom(1024) # buffer size is 1024 bytes
 
 diary =  addr[0] + ".txt"  #以IP地址.txt 格式保存,并将diary_txt作为全局变量
 
-def diary_open(diary):    
-   diary_o = open('diary.txt','a')
-   diary_content = diary_o.read()
-   sock.sendto(diary_content,addr)
-   diary_o.close()
-   print "日志已打开"
-   return history
+
+def open_diary(diary):    
+   o = open(diary,'a')
+   content = o.read()
+   sock.sendto(content,addr)
+   o.close()
+   print "日志已发送至%s" %addr[0]
+
     
-def diary_save(history,diary):
+def save(data,diary):
     now = datetime.datetime.now()
     otherStyleTime = now.strftime("%Y-%m-%d %H:%M:%S") #参考第一周代码
-    diary_s=open('diary.txt','a')
-    diary_s.write(otherStyleTime+":"+diary_s.read()+"\n")
-    
-    diary_s.close()
-    
+    s = open(diary,'a')
+    s.write(otherStyleTime+":"+data+ "\n")
+    s.close()
+    print "日志已保存至%s" %diary
 
+#参考第一周代码    
+def main():
+    data, addr = sock.recvfrom(1024) # buffer size is 1024 bytes
+    s=open(diary,'a') #新建txt文件
+
+
+    if data=='r' or data=='R':
+        print "Loading..."
+        open_diary(diary)
+    else:
+        print "已读:", data, "来自-->", addr[0]
+        save(data,diary)
 
 while 1:
+    print "*** %s的日记本--服务器端********\n" %addr[0]
+    main()
 
-    print "已读:", data, "来自-->", addr[0]
-    print "日志保存在" + diary
-    
-    if data == "open":
-        diary_open(diary)
-     
-    if data == 'save':
-        print "已保存"
-        diary_save(data,diary)
 
 
