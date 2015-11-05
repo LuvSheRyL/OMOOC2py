@@ -215,7 +215,15 @@ s.close()
         main()
 		
 		
+<<<<<<< HEAD
 
+=======
+### 使用说明
+
+1. 先启动server端文件，等待
+2. 启动客户端py文件，并输入信息
+3. 输入r可读取历史记录
+>>>>>>> 6f468913b017a98f5585e0aec53196fc0a0f7b6b
 
 * * *
 ### 服务器端代码
@@ -275,9 +283,15 @@ s.close()
 
 
 
+<<<<<<< HEAD
 ### Version 3.0 让服务器更智能些
 
 
+=======
+## Version 3.0 将日志修改为机器人聊天工具
+
+代码完善中
+>>>>>>> 6f468913b017a98f5585e0aec53196fc0a0f7b6b
 
 ----------
 
@@ -296,7 +310,11 @@ s.close()
 	
 	backlog应该理解为阻塞队列的长度，总共与服务器连接的客户端一共有 backlog + 1 个。阻塞队列FIFO，当连接客户端结束后阻塞队列里的第一个客服端与服务器连接成功。
 
+<<<<<<< HEAD
 2. 
+=======
+2. 外部Python文件class调用
+>>>>>>> 6f468913b017a98f5585e0aec53196fc0a0f7b6b
 
 
 
@@ -310,3 +328,5 @@ s.close()
 > [《Python socket编程_haodi_新浪博客》](http://blog.sina.com.cn/s/blog_523491650100hikg.html)
 
 > [Socket Programming HOWTO](https://docs.python.org/2/howto/sockets.html)
+> 
+> [机器人API接入](http://www.tuling123.com/html/doc/api.html#jiekou)

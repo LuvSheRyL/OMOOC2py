@@ -5,3 +5,6 @@
 > Git Community Book 中文版, 
 欢迎你成为本书的一名读者.   这本书汇聚了Git社区的很多精华,  其目的就是帮助你尽快的掌握Git.
 
+![](http://ktown.kde.org/~zrusin/git/git-cheat-sheet-medium.png)
+
+[git-cheat-sheet大图](http://byte.kde.org/~zrusin/git/git-cheat-sheet-large.png)
