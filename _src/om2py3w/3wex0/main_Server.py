@@ -14,12 +14,10 @@ UDP_PORT = 9527
 
 def ai_chat(data):
     chat = Chat()
-    info = data
-    chat.send(info)
     chat.init()
-    chat.get()
-    
-    
+    chat.send(data)
+    AI_text = chat.send.text 
+    return AI_text
 
 
     
@@ -42,6 +40,8 @@ def main():
 
     #if data == 'ai' or data == 'AI':
     ai_chat(data)
+    print AI_text
+    sock.sendto(AI_text,addr)
 '''    
     if data=='r' or data=='R':
         print "Loading..."

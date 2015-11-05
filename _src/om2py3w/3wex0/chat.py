@@ -13,14 +13,15 @@ class Chat(object):
   
     def init(self):
         os.system("cls") #windows cmd 清屏
-        print u"尽情调教把!"
+        print u"哥哥~尽情调教把!"
         print "--"*30
   
-    def get(self):
+    def get(self,info):   #增加info变量用于接收外部内容
+        self.info = info  #声明
         print "> ",
-        info = raw_input()
+        #info = raw_input()  关闭此命令，接收远端信息
         if info == 'q' or info == 'exit' or info == "quit":
-            print "- Goodbye"
+            print "- Goodbye AI"
             return
         self.send(info)
   
@@ -30,10 +31,11 @@ class Chat(object):
         re_dict = json.loads(re)
         text = re_dict['text']
         print '- ', text
-        self.get()
+        self.get(info)
   
-  
+'''
 if __name__ == "__main__":
     chat = Chat()
     chat.init()
     chat.get()
+'''
