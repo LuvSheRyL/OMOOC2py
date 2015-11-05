@@ -3,6 +3,7 @@
 import socket
 import sys,codecs
 import datetime
+from chat import *
 
 reload(sys)
 sys.setdefaultencoding('GB2312') #适用于win-cmd运行
@@ -10,20 +11,16 @@ sys.setdefaultencoding('GB2312') #适用于win-cmd运行
 UDP_IP = "127.0.0.1"
 UDP_PORT = 9527
 
-sock = socket.socket(socket.AF_INET, # Internet
-                     socket.SOCK_DGRAM) # UDP
-sock.bind(('', UDP_PORT))        #''表示接收域内所以IP地址
-data, addr = sock.recvfrom(1024) # buffer size is 1024 bytes
 
-diary =  addr[0] + ".txt"  #以IP地址.txt 格式保存,并将diary_txt作为全局变量
+def ai_chat(data):
+    chat = Chat()
+    info = data
+    chat.send(info)
+    chat.init()
+    chat.get()
+    
+    
 
-
-def open_diary(diary):    
-   o = open(diary,'a')
-   content = o.read()
-   sock.sendto(content,addr)
-   o.close()
-   print "日志已发送至%s" %addr[0]
 
     
 def save(data,diary):
@@ -36,19 +33,33 @@ def save(data,diary):
 
 #参考第一周代码    
 def main():
+    sock = socket.socket(socket.AF_INET, # Internet
+                     socket.SOCK_DGRAM) # UDP
+    sock.bind(('', UDP_PORT))        #''表示接收域内所以IP地址
     data, addr = sock.recvfrom(1024) # buffer size is 1024 bytes
-    s=open(diary,'a') #新建txt文件
+    diary =  addr[0] + ".txt"  #以IP地址.txt 格式保存,并将diary_txt作为全局变量
+    print "*** %s的日记本--服务器端********\n" %addr[0]
 
-
+    #if data == 'ai' or data == 'AI':
+    ai_chat(data)
+'''    
     if data=='r' or data=='R':
         print "Loading..."
-        open_diary(diary)
+        #open_diary(diary)
+        o = open(diary,'r')
+        content = o.read()
+        #print type(content)
+        sock.sendto(content,addr)
+        o.close()
+        print  "日志已发送至%s" %addr[0]
     else:
         print "已读:", data, "来自-->", addr[0]
         save(data,diary)
+        
+'''        
+
 
 while 1:
-    print "*** %s的日记本--服务器端********\n" %addr[0]
     main()
 
 

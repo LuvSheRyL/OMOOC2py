@@ -9,20 +9,23 @@ UDP_PORT = 9527
 ip_address = (UDP_IP,UDP_PORT)
 
 
-
-
-
-
 def main():
     sock = socket.socket(socket.AF_INET, # Internet地址族
                      socket.SOCK_DGRAM) # UDP协议
-    MESSAGE =  raw_input("r:读日志，w:写日志。请您输入:") #一次只能一行内容
+                     
+    print '''
+    欢迎来到*** %s的日记本--********
+    输入‘r’---载入历史记录
+    输入‘AI’ or ‘ai’---开启人工智能聊天模式
+    
+    '''%UDP_IP
+    MESSAGE =  raw_input("写点什么呢:") #一次只能一行内容
     
     if MESSAGE == 'r':
         print "正在打开日志……" 
         sock.sendto(MESSAGE,ip_address)
-        print "来自服务器-->\n",sock.recv(1024)
-     
+        print sock.recv(1024)
+   
     else:
      sock.sendto(MESSAGE,ip_address)
      print "UDP target IP:", UDP_IP
