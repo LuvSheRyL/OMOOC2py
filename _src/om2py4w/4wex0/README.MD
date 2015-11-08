@@ -30,6 +30,16 @@
 ### 参考
 
 > [wiki/HTML](https://en.wikipedia.org/wiki/HTML)
+> [Web service](https://en.wikipedia.org/wiki/Web_service?cm_mc_uid=28826105043914467360895&cm_mc_sid_50200000=1446736089)
+> [REST Wiki](https://en.wikipedia.org/wiki/Representational_state_transfer)
+> [REST中文简介](http://www.cnblogs.com/shanyou/archive/2012/05/12/2496959.html)
+> [REST案例框架实现](http://blog.csdn.net/maoxiang/article/details/4551434)
+> [官方Python WSGI核心](https://www.python.org/dev/peps/pep-0333/)
+>[Python你必须知道的十个库](http://www.open-open.com/news/view/ba474d)
+>[12 个最好的 Python 框架用于快速开发](http://www.open-open.com/news/view/774e1f)
+>[10个用于Web开发的最好 Python 框架](http://www.open-open.com/news/view/f2eefa)
+>[Bottle](http://bottlepy.org/docs/dev/)
+>[Bottle Tutorial: Todo-List Application](http://bottlepy.org/docs/dev/tutorial_app.html#using-bottle-for-a-web-based-todo-list)
 
 
 <html>
@@ -47,6 +57,7 @@
 </form>
 </body>
 </html>
+
 
 
 

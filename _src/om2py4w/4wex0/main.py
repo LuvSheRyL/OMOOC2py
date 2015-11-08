@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
 from bottle import route, run, template,get,post,request,error,FormsDict
+from S import save,main
+
 
 @route('/')
 @route('/hello/<name>')
@@ -31,19 +33,21 @@ def error404(error):
     return 'Õ¯“≥≈‹∂™¡À°£°£…‘µ»'
     
 
-@route('/diary') #
+@route('/write') 
 
-def diary():
+def diary_w():
+    
+    
     return '''
 
     <hr>
-    <form action="diary" method="get">
+    <form action="/write" method="get">
 
             
             <br>
             <center>
             <textarea rows="10" cols="50" id="diary_text" readonly>
-My diary
+My diary...
             </textarea>
             <center>
             My diary: <input type="text" name="diary_text" />
@@ -51,5 +55,11 @@ My diary
     </form>
     '''
 
+def do_diary_w():
+        web_diary_text = request.forms.get('diary_text')
+        save(web_diary_text,diary)
+        
     
-run(host='localhost', port=8080,debug=True)
+
+    
+run(host='localhost', port=8080,debug=True,reloader=True)

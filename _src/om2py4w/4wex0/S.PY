@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+#日记本客户端,CMD运行Python S.PY
+#先启动S.PY，在运行C.PY
 
 import socket
 import sys,codecs
@@ -8,7 +10,7 @@ reload(sys)
 sys.setdefaultencoding('GB2312') #适用于win-cmd运行
 
 UDP_IP = "127.0.0.1"
-UDP_PORT = 9527
+UDP_PORT = 8080
 
 
 #def open_diary(diary):    
