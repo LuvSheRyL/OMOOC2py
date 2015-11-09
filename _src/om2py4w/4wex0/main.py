@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from bottle import route, run, template,get,post,request,error,FormsDict
-from S import save,main
+from my_diary import append_text,get_text 
 
 
 @route('/')
@@ -34,32 +34,24 @@ def error404(error):
     
 
 @route('/write') 
-
 def diary_w():
-    
-    
-    return '''
+    local_diary_txt = get_text()
+    return template('diary_write.tpl',diary_textarea=local_diary_txt)
 
-    <hr>
-    <form action="/write" method="get">
-
-            
-            <br>
-            <center>
-            <textarea rows="10" cols="50" id="diary_text" readonly>
-My diary...
-            </textarea>
-            <center>
-            My diary: <input type="text" name="diary_text" />
-            <input type="submit" value="Updata" /><br>
-    </form>
-    '''
-
+@route('/write',method='POST')
 def do_diary_w():
-        web_diary_text = request.forms.get('diary_text')
-        save(web_diary_text,diary)
-        
+    web_diary_text = request.forms.get('diary_text')
+    append_text(web_diary_text)
+    return template('diary_write.tpl',diary_textarea=web_diary_text)
     
-
+@get('/read')
+def diary_w():
+    if request.forms.get('history'):
+        print a
+        f = open('mydiary.txt')
+        content = f.read()
+        f.close
+        return template('diary_write.tpl',diary_textarea=content)
+        
     
 run(host='localhost', port=8080,debug=True,reloader=True)

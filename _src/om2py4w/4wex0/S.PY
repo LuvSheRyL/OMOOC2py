@@ -5,6 +5,7 @@
 import socket
 import sys,codecs
 import datetime
+import my_diary
 
 reload(sys)
 sys.setdefaultencoding('GB2312') #适用于win-cmd运行
@@ -49,6 +50,5 @@ def main():
         print "已读:", data, "来自-->", addr[0]
         save(data,diary)
 
-
-while 1:
+if __name__ == '__main__':
     main()
