@@ -26,8 +26,21 @@
 + 体验做到完美
 
 
+
+### 快速开发Web 美化
+
+**一切必须用背景图片才能实现的视觉效果都是耍流氓**
+
+[Bootstrap ](http://getbootstrap.com/getting-started/)
+
+[Bootstrap中文](http://v3.bootcss.com/)
+
+安装`$ npm install bootstrap` 或者[点击下载v3.3.5](https://codeload.github.com/twbs/bootstrap/zip/v3.3.5)
+
+
+
 ----------
-### 参考
+### 参考文档
 
 > [wiki/HTML](https://en.wikipedia.org/wiki/HTML)
 > 
@@ -47,13 +60,22 @@
 >
 > [10个用于Web开发的最好 Python 框架](http://www.open-open.com/news/view/f2eefa)
 >
-> [Bottle](http://bottlepy.org/docs/dev/)
+> [Bottle官方文档](http://bottlepy.org/docs/dev/)
 >
-> [Bottle Tutorial: Todo-List Application](http://bottlepy.org/docs/dev/tutorial_app.html#using-bottle-for-a-web-based-todo-list)
+> [Bottle 教程: Todo-List Application](http://bottlepy.org/docs/dev/tutorial_app.html#using-bottle-for-a-web-based-todo-list)
 > 
+> [Grunt打造前端自动化工作流](http://tgideas.qq.com/webplat/info/news_version3/804/808/811/m579/201307/216460.shtml)
+>> [Gruntjs官方](http://www.gruntjs.net/getting-started)
+> 
+>[大妈Simple-TODO Bottle 实现版](https://bitbucket.org/ZoomQuiet/bottle-simple-todo/wiki/Home) 
+>
 > [cURL for Win CMD](http://www.2cto.com/os/201205/131164.html)
+> 
+> [curl常用命令](http://www.cnblogs.com/gbyukg/p/3326825.html)
 
 >[Html-meta应用](http://www.cnblogs.com/eastsuntdh/articles/561021.html)
+
+>[车百科网开发手记、代码](http://blog.quickbest.net/a/242)
 
 
 <html>

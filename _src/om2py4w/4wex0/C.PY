@@ -4,9 +4,9 @@
 import socket
 import sys,codecs
 reload(sys)
-sys.setdefaultencoding('GB2312') #在CMD中运行编码为GB2312，在Python中应修改为UTF-8
+sys.setdefaultencoding('UTF-8') #在CMD中运行编码为GB2312，在Python中应修改为UTF-8
 
-UDP_IP = "127.0.0.1"
+UDP_IP = "localhost"
 UDP_PORT = 8080
 ip_address = (UDP_IP,UDP_PORT)
 
@@ -33,5 +33,5 @@ def main():
      print "UDP target port:", UDP_PORT
      print "已发送信息:", MESSAGE
                      
-while 1:
+if __name__ == '__main__':
     main()
