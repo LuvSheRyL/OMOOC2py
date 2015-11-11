@@ -46,7 +46,8 @@ def do_diary_w():
     
 @get('/read')
 def diary_w():
-
+    if request.forms.get('history'):
+        print a
         f = open('mydiary.txt')
         content = f.read()
         f.close

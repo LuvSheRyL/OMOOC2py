@@ -27,6 +27,40 @@
 
 
 
+### 用于CLI的html解析
+
+官方Beautifulsoup4 库：[https://pypi.python.org/pypi/beautifulsoup4](https://pypi.python.org/pypi/beautifulsoup4)
+
+[BeautifulSoup/bs4中文文档](http://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/)
+
+
+下载后，安装 `pip install beautifulsoup4-4.4.1-py2-none-any.whl`
+
+安装Requests `$ pip install requests`
+
+### V1.0 
+
+效果图：
+
+![](http://i12.tietuku.com/3feeeec558a14dec.jpg)
+
+客户端代码是参考：[sunoonlee](https://github.com/sunoonlee/OMOOC2py/tree/master/_src/om2py4w/4wex0)
+
+在他的基础上修正了
+ 
+ + 客户端中文输出，网页读取历史，服务器崩溃问题
+   + 原因是gbk,utf-8 转换问题所致
+ 
+ + 灵活运用`.decode('utf-8').encode('gbk') `#utf-8-->gbk 输出 可解决
+ 
+```
+    INPUT_gbk = raw_input('输入： '.decode('utf-8').encode('gbk')).strip()
+    INPUT = INPUT_gbk.decode('gbk').encode('utf-8')
+```
+
+
+----------
+
 ### 快速开发Web 美化
 
 **一切必须用背景图片才能实现的视觉效果都是耍流氓**
