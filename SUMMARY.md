@@ -34,8 +34,8 @@
      * [main.py](_src/om2py0w/0wex1/main.md) 
    * [记事本GUI](_src/om2py2w/2wex0/readme.md)
    * [Socket C/S记事本](_src/om2py3w/3wex0/README.md)
-   * [Web记事本(本地)](_src/om2py4w/4wex0/V1.0/readme.md)
    * [Web记事本(在线)](_src/om2py5w/5wex0/README.md)
+   * [Web记事本(本地)](_src/om2py4w/4wex0/README.md)
 	  
 * [素材 (draft)](draft/README.md)
    * [教程该怎么写](draft/how2tutorial.md)
