@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from bottle import route, run, template,get,post,request,error,FormsDict
 from my_diary import append_text,get_text 
+import diary_sqlsever
 
 
 @route('/')
@@ -8,24 +9,6 @@ from my_diary import append_text,get_text
 def greet(name='Stranger'):
     return template('Hi {{name}}, how are you?', name=name)
 
-@get('/login') # or @route('/login')
-def login():
-    return '''
-        <form action="/login" method="post">
-            Username: <input name="username" type="text" />
-            Password: <input name="password" type="password" />
-            <input value="Login" type="submit" />
-        </form>
-    '''
-
-@post('/login') # or @route('/login', method='POST')
-def do_login():
-    username = request.forms.getunicode('username')
-    password = request.forms.getunicode('password')
-    if check_login(username, password):
-        return "<p>Your login information was correct.</p>"
-    else:
-        return "<p>Login failed.</p>"
 
 # ÃÌº”¥ÌŒÛÃ· æ
 @error(404)
@@ -52,5 +35,10 @@ def diary_w():
         f.close
         return template('diary_write.tpl',diary_textarea=content)
         
-    
+@get('/diary')
+def diary_sql_show():
+    diary_sql_text = diary_sqlsever.fetchall_test()
+    return template('diary_write.tpl',diary_textarea=diary_sql_text)
+        
+        
 run(host='localhost', port=8080,debug=True,reloader=True)

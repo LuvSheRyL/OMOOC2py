@@ -38,7 +38,11 @@
 
 安装Requests `$ pip install requests`
 
-### V1.0 
+----------
+
+### V1.0 WEB/CLI （txt格式保存）
+ + utf8中文支持
+ + 
 
 效果图：
 
@@ -52,16 +56,38 @@
    + 原因是gbk,utf-8 转换问题所致
  
  + 灵活运用`.decode('utf-8').encode('gbk') `#utf-8-->gbk 输出 可解决
- 
-```
-    INPUT_gbk = raw_input('输入： '.decode('utf-8').encode('gbk')).strip()
-    INPUT = INPUT_gbk.decode('gbk').encode('utf-8')
-```
+
+`INPUT_gbk = raw_input('输入： '.decode('utf-8').encode('gbk')).strip()`
+`INPUT = INPUT_gbk.decode('gbk').encode('utf-8')`
+
+----------
+
+### V2.0 数据库的应用
+根据教程提示，这里考虑sqlite关系型数据库
+
+安装地址：[http://www.sqlite.org/download.html](http://www.sqlite.org/download.html)
+
+1. 建里数据库CMD环境下：`C:\Users\robo_one\OMOOC2py\_src\om2py4w\4wex0>sqlite3 mydiary.db`
+2. 在sqlite>后输入`sqlite> sqlite3 mydiary.db;` 注意分号--表示sqlite的确认
+3. 创建数据表
+
+![](http://i12.tietuku.com/7d5402b627cc6661.jpg)
+
+    sqlite> .tables
+    sqlite> CREATE TABLE mydiary(
+       ...> Id integer PRIMARY KEY,
+      ...> TIME text NOT NULL,
+     ...> DATA text DEFAULT 'MYDIARY');
+    sqlite> .tables
+    mydiary
+    sqlite>
+
+
 
 
 ----------
 
-### 快速开发Web 美化
+### 快速开发Web 美化（未完成）
 
 **一切必须用背景图片才能实现的视觉效果都是耍流氓**
 
@@ -110,29 +136,5 @@
 >[Html-meta应用](http://www.cnblogs.com/eastsuntdh/articles/561021.html)
 
 >[车百科网开发手记、代码](http://blog.quickbest.net/a/242)
-
-
-<html>
-<body>
-<hr>
-<form action="diary" method="get">
-        <center>
-        My diary: <input type="text" name="diary_text" />
-        <input type="submit" value="Updata" />
-        <br>
-        <textarea rows="3" cols="50" readonly>
-日记
-        </textarea>
-        <center>
-</form>
-</body>
-</html>
-
-
-
-
-
-
-----------
-
-
+>
+>[《零基础学python》（第二版）](https://github.com/qiwsir/StarterLearningPython)

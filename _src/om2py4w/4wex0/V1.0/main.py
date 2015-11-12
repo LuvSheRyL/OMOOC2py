@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from bottle import route, run, template,get,post,request,error,FormsDict
 from my_diary import append_text,get_text 
+import diary_sqlsever
 
 
 @route('/')
@@ -46,8 +47,7 @@ def do_diary_w():
     
 @get('/read')
 def diary_w():
-    if request.forms.get('history'):
-        print a
+
         f = open('mydiary.txt')
         content = f.read()
         f.close
