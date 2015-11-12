@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from bottle import route, run, template,get,post,request,error,FormsDict
 from my_diary import append_text,get_text 
-import diary_sqlsever
+
 
 
 @route('/')
