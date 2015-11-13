@@ -62,7 +62,7 @@
 
 ----------
 
-### V2.0 数据库的应用
+### V2.0 数据库的应用 (未完成)
 根据教程提示，这里考虑sqlite关系型数据库
 
 安装地址：[http://www.sqlite.org/download.html](http://www.sqlite.org/download.html)
