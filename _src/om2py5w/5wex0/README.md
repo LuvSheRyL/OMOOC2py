@@ -28,6 +28,42 @@
             `$ cd sae-python-dev-guide/dev_server`
 
             `$ python setup.py instal`
+     
+      + 在项目目录saeapp\1\下新建两个文件
+        ，（\1\表示版本文件夹）
+          +  config.yaml 用于配置个人信息
+          
+                `name: mydiary` 
+                `version: 1`
 
- + [KVDB](http://www.sinacloud.com/doc/sae/python/kvdb.html)
- + 
+                *注意name:后面需要空格。。否则dev_server.py执行报错。*
+
+
+
+
+          + index.wsgi
+          
+          + 官方代码：
+          
+                from bottle import Bottle, run
+
+                import sae
+
+                app = Bottle()
+
+                @app.route('/')
+                def hello():
+                    return "Hello, world! - Bottle"
+
+                application = sae.create_wsgi_app(app)
+
+      + 切换至项目目录下，运行`dev_server.py` ，
+效果如下：
+![](http://i5.tietuku.com/fe6a92fac4711ed4.jpg)
+
+
+ + [KVDB](http://www.sinacloud.com/doc/sae/python/tools.html?ticket=7c904af8cec89f3130a2b2a819f234692b75759c#kvdb)
+
+    + KVDB默认数据存在内存中，dev_server.py进程结束时，数据会全部丢失，如果需要保存数据， 请使用如下命令行启动dev_server.py。
+    + `dev_server.py --kvdb-file=/path/to/kvdb/local/file`
+    + `$ dev_server.py --kvdb-file=kvdb.db`
