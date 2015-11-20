@@ -1,16 +1,29 @@
-转载自：
-README
-===========================
+参考文献：
+
+[Markdown文献汇总 - 阳志平 ](http://cn.bing.com/search?q=site%3Ahttp%3A%2F%2Fwww.yangzhiping.com%2Ftech%2F+markdown)
+
+[Markdown小技巧集合 - 阳志平的网志](http://www.yangzhiping.com/tech/markdown-tips.html)
+
+[Markdown生态链整理 - 阳志平的网志](http://www.yangzhiping.com/tech/markdown-ecosystem.html)
+
+[Markdown写作进阶：Pandoc入门浅谈 - 阳志平的网志](http://www.yangzhiping.com/tech/pandoc.html)
+
+
+----------
 该文件用来测试和展示书写README的各种markdown语法。GitHub的markdown语法在标准的markdown语法基础上做了扩充，称之为`GitHub Flavored Markdown`。简称`GFM`，GFM在GitHub上有广泛应用，除了README文件外，issues和wiki均支持markdown语法。
 
 ****
 ###　　　　　　　　　　　　Author:Jelly
+----------
 
-===========================
+推荐编辑：
 
 [Haroopad (Markdown编辑器) 0.13.1 官方中文版下载链接](http://www.xz7.com/dir/149111.html#download)
 
-##<a name="index"/>目录
+[https://quip.com/](https://quip.com/)
+
+##<a name="index"/>目录 
+
 * [横线](#line)
 * [标题](#title)
 * [文本](#text)
