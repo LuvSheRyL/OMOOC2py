@@ -3,9 +3,10 @@
 import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
+
 from bottle import route, run, template,get,post,request,Bottle,debug
 import requests
-
+import os
 import sae
 import sae.kvdb
 import time
@@ -32,7 +33,7 @@ def input_db(date_db,tags):
     key_id = kv.get('globalvar_id')
     kv.set('globalvar_id', key_id+1)
     server_time = time.ctime()
-    key = 'key' + str(count)
+    key = 'key' + str(key_id)
     tags = tags if tags else ['NULL']
     value = {'time':server_time,'content':date_db,'tags':tags}
     kv.set(key,value)
@@ -72,7 +73,7 @@ def diary_w():
     traffic = kv.get('globalvar_traffic')
     web_diary_text_db = output_db()
     note = len(list(kv.getkeys_by_prefix('key')))
-    return template('diary_diary',diary_textarea=web_diary_text_db,traffic=traffic,note = note)
+    return template('diary_diary',diary_text=web_diary_text_db,traffic=traffic,note = note)
 
     
 
@@ -85,7 +86,7 @@ def do_diary_w():
     web_diary_text_db = output_db()
     traffic = kv.get('globalvar_traffic')
     note = len(list(kv.getkeys_by_prefix('key')))
-    return template('diary_diary',diary_textarea=web_diary_text_db,traffic=traffic,note = note)
+    return template('diary_diary',diary_text=web_diary_text_db,traffic=traffic,note = note)
     
 @app.route('/tags/<tag>')
 def do_tag(tag):
