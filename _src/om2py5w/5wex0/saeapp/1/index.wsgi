@@ -32,7 +32,8 @@ def input_db(date_db,tags):
 
     key_id = kv.get('globalvar_id')
     kv.set('globalvar_id', key_id+1)
-    server_time = time.ctime()
+    #server_time = time.ctime()
+    server_time=time.strftime(u"%Y年%m月%d日 %H:%M:%S")
     key = 'key' + str(key_id)
     tags = tags if tags else ['NULL']
     value = {'time':server_time,'content':date_db,'tags':tags}
@@ -95,6 +96,14 @@ def do_tag(tag):
         return template('tag', diary=mydiary,tag=tag)
     else:
         return "Tag not found<br><a href='/'>返回<a>"
+
+
+@app.route('/', method='DELETE')
+def do_delete():
+    keys = kv.getkeys_by_prefix('')
+    for key in keys:
+        kv.delete(key)
+    return "All data deleted!<br><a href='/'>返回<a>"
         
 application = sae.create_wsgi_app(app)
 

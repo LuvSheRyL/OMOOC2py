@@ -10,8 +10,8 @@
       div.post { border: 1px solid #999;
                  padding: 10px 10px;
      margin: 10px 20%;}
-      em.date { color: #999;}
-      em.tags { color: #999;}
+      em.date { color: #699;}
+      em.tags { color: #299;}
     </style>
 </head>
 <body>
