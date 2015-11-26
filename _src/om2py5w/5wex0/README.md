@@ -23,18 +23,18 @@
             1. pip安装`$ pip install sae-python-dev`
             2. 或者git clone 安装
             
-            `$ git clone https://github.com/sinacloud/sae-python-dev-guide.git`
+            $ git clone https://github.com/sinacloud/sae-python-dev-guide.git
 
-            `$ cd sae-python-dev-guide/dev_server`
+            $ cd sae-python-dev-guide/dev_server
 
-            `$ python setup.py instal`
+            $ python setup.py instal
      
       + 在项目目录saeapp\1\下新建两个文件
         ，（\1\表示版本文件夹）
           +  config.yaml 用于配置个人信息
           
-                `name: mydiary` 
-                `version: 1`
+                name: mydiary 
+                version: 1
 
                 *注意name:后面需要空格。。否则dev_server.py执行报错。*
 
@@ -91,3 +91,9 @@
     git add --all
     git commit -m "V1.0"
     git push sae master:1 （创建分支，并部署。）
+
+
+测试链接[http://robodiary.sinaapp.com/](http://robodiary.sinaapp.com/)
+
+优秀作品参考：
+[@wp-lai](https://github.com/wp-lai/OMOOC2py/tree/master/_src/om2py5w/5wex0)
