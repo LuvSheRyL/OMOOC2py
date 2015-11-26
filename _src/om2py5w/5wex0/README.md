@@ -67,3 +67,27 @@
     + KVDB默认数据存在内存中，dev_server.py进程结束时，数据会全部丢失，如果需要保存数据， 请使用如下命令行启动dev_server.py。
     + `dev_server.py --kvdb-file=/path/to/kvdb/local/file`
     + `$ dev_server.py --kvdb-file=kvdb.db`
+
+
++ [远程代码部署](http://www.sinacloud.com/doc/sae/tutorial/code-deploy.html#git)
+     
+     目前SAE上的应用支持通过SVN和Git来部署代码。
+     Git仓库地址	https://git.sinacloud.com/YOUR_APP_NAME
+     SVN仓库地址	https://svn.sinacloud.com/YOUR_APP_NAME
+
+     用户名 SAE安全邮箱
+
+     密码 SAE安全密码
+
+> 注解
+> 
+> 用户名和密码为安全邮箱和安全密码，不是微博账号和微博密码！如已启用微盾动态密码，则密码应该是“安全密码”+“微盾动态密码”
+
+    git init
+
+    vim .git/config
+
+        修改远程仓库地址：url =   https://git.sinacloud.com/YOUR_APP_NAME
+    git add --all
+    git commit -m "V1.0"
+    git push sae master:1 （创建分支，并部署。）

@@ -5,7 +5,6 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 from bottle import route, run, template,get,post,request,Bottle,debug
-import requests
 import os
 import sae
 import sae.kvdb

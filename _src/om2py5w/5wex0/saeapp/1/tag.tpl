@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Alan's Diary</title>
+    <title>Web Diary</title>
     <style>
       h1, form { text-align: center; }
       textarea { width: 400px; height: 100px; }
