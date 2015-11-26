@@ -35,12 +35,14 @@
         * [main.py](_src/om2py0w/0wex1/main.md) 
    * [记事本GUI](_src/om2py2w/2wex0/readme.md)
    * [Socket C/S记事本](_src/om2py3w/3wex0/README.md)
-   * [Web记事本(在线)](_src/om2py5w/5wex0/README.md)
    * [Web记事本(本地)](_src/om2py4w/4wex0/README.md)
-   
+   * [Web记事本(在线)](_src/om2py5w/5wex0/README.md)
+   * [微信公众化](_src/om2py6w/6wex0/README.md)   
 * [素材 (draft)](draft/README.md)
    * [教程该怎么写](draft/how2tutorial.md) 
    * [如何思考](ru_he_si_kao.md)
    * [游戏化·学习·生活](kapian.md)
+   * [提问的智慧](0MOOC/tiwen.md)
+   * [邮件技巧](http://blog.zhgdg.org/2013-06/zh-gdg-mailing/)
 * [有关](ABOUT.md)
 
