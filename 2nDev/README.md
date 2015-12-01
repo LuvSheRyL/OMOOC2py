@@ -123,15 +123,17 @@
 
 任务→完成→分享→奖励……晋级……新的副本挑战……随着等级的越高你的奖励可以越丰富。
 
-
 （此处不太擅长，需要游戏开发经验朋友献计献策）
 
 
-![](http://www.xiancity.cn/upload/news/201503/20150312142810354.jpg)
+
+
+*****
+
 
 
 ## 开发
-
++ Fork: [Github](https://github.com/shawn0lee0/RUNMAP)
 + 发起人所在城市:浙江杭州
 + 发起人的优势：七年电子产品开发经验，十年体育竞技类游戏骨灰玩家
 + 已知的技术难点：
@@ -157,12 +159,19 @@
     + 系统压力预测：
      + 开智群内测吧~
      + 
-+ 招募成员要求（）:
-    + 架构师×1
-    + 客户端×1
-    + 服务器×1
-    + 欢迎其他团队一起Fork
-    
++ 如何加入：
+ + [fork](https://github.com/shawn0lee0/RUNMAP)
+ + [Gmail](mailto:run-map@googlegroups.com?subject=反馈)
+
++ 成员：3~8
+
+ + 客户端2~3
+ + 服务器3~4
+ + 观察、测试：3~5
+ + 欢迎其他团队一起Fork
+
+
+
 + 版本规划：
   + 第1周：MVP
         + DAY1：功能精简、搭平台、熟悉API
@@ -181,15 +190,39 @@
         + DAY6：预发布
         + DAY7：迭代
 
++ 代码交流：
+ + [有道协作群 群号：15172380](http://163.fm/bCEj1yB)
+ + Wechat群组：个人号：robo_one申请验证后拉群。
+ + [Google run-map Group](mailto:run-map@googlegroups.com?subject=反馈)
++ 代码合并
++ 运行
++ 测试
++ 任务：
+ + 认领
+ + 分配
+ + 指派
+ + 追踪
+ + 交付
+ + 关闭 
 
 
-参考
 
+效果
+
++ [咕咚效果图](http://www.xiancity.cn/upload/news/201503/20150312142810354.jpg)
+
+技术
 
 + [咕咚API](http://open.codoon.com/page/index#auth)
 + [百度鹰眼](http://yingyan.baidu.com/)
 + [高德LBS开放平台](http://lbs.amap.com/api/javascript-api/reference/plugin/#m_AMap.Geolocation)
 + [腾讯LBS开放平台](http://lbs.qq.com/)
++ [看板管理](http://www.infoq.com/cn/articles/agile-kanban-boards)
+ + [《看板方法》](http://book.douban.com/subject/25788807/) 
++ 版本控制：
+ + [Git分支管理策略](http://www.ruanyifeng.com/blog/2012/07/git.html)
+ + [Gitflow](https://github.com/nvie/gitflow/)
+ + [Managing branches in your repository](https://help.github.com/articles/managing-branches-in-your-repository/)
 
 ## 意见反馈
 
