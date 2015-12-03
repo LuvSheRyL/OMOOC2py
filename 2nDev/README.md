@@ -209,7 +209,9 @@
 
 效果
 
-+ [咕咚效果图](http://www.xiancity.cn/upload/news/201503/20150312142810354.jpg)
++ [效果图1](http://i5.tietuku.com/eafa728e22c6d11f.png)
++ ![](http://i5.tietuku.com/eafa728e22c6d11f.png)
++ 效果图2 ![](http://i5.tietuku.com/208a1c51bd43abeb.png)
 
 技术
 
