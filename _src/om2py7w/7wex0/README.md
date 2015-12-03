@@ -84,3 +84,5 @@
 	
 	3. [Fabric官方教程](http://docs.fabfile.org/en/1.10/)
 	4. [参考博客](http://blog.csdn.net/wklken/article/details/8719541)
+
+3.  [安卓模拟器genymotion](http://www.genymotion.net/)
