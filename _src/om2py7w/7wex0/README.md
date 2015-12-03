@@ -86,3 +86,5 @@
 	4. [参考博客](http://blog.csdn.net/wklken/article/details/8719541)
 
 3.  [安卓模拟器genymotion](http://www.genymotion.net/)
+
+ + [下载](https://www.genymotion.com/#!/download)
