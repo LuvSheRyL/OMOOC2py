@@ -140,12 +140,13 @@
  + LBS技术
  + 前端
      + [WebApp](https://developers.google.com/web/updates/2014/11/Support-for-installable-web-apps-with-webapp-manifest-in-chrome-38-for-Android)
-     + Qpython
  + 服务器架构
  + 图形生成
+  + web前端浏览器内嵌js脚本生成，可调用api接口
+  + 后台管理数据可用py实现数据可视化管理；
  + 用户认证
- + 积分反馈
- 
+  + 利用现成模块
+ + 积分反馈（MVP先不做）
 + 现有的代码基础：入门
 + 问题场景,以及解决思路：见上述分析。
 + 未来发展策划
@@ -162,6 +163,7 @@
 + 如何加入：
  + [fork](https://github.com/shawn0lee0/RUNMAP)
  + [Gmail](mailto:run-map@googlegroups.com?subject=反馈)
+ + [开发群通讯录](http://qun.hk/b/6427c35cd44c)
 
 + 成员：3~8
 
@@ -176,6 +178,7 @@
   + 第1周：MVP
         + DAY1：功能精简、搭平台、熟悉API
          + [交互效果V1.0](https://modao.cc/app/wZtUeShfg7Q8DGUeembZ)
+         + ![](http://i5.tietuku.com/2de2658477fdfc2bs.png)![](http://i5.tietuku.com/cf4ddc327dab57cds.png)
         + DAY2：
         + DAY3：
         + DAY4：
@@ -207,12 +210,6 @@
  + 关闭 
 
 
-
-效果
-
-+ [效果图1](http://i5.tietuku.com/eafa728e22c6d11f.png)
-+ ![](http://i5.tietuku.com/eafa728e22c6d11f.png)
-+ 效果图2 ![](http://i5.tietuku.com/208a1c51bd43abeb.png)
 
 技术
 
