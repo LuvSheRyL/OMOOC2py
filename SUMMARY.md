@@ -46,5 +46,6 @@
    * [游戏化·学习·生活](kapian.md)
    * [提问的智慧](0MOOC/tiwen.md)
    * [邮件技巧](http://blog.zhgdg.org/2013-06/zh-gdg-mailing/)
+   * [能技](0MOOC/nengji.md)
 * [有关](ABOUT.md)
 
