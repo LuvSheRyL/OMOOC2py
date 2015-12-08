@@ -29,7 +29,7 @@
 * [基础旋进](1sTry/README.md)
  * [PPT流大法](1sTry/ppt.md)
 * [迭代作品-Runmap](2nDev/README.md)
- * [Runmap开发](runmapquickstart.md)
+ * [Runmap开发](2nDev/runmapquickstart.md)
 * [人生首秀](3rDemo/README.md)
 * [代码 (_src)](_src/README.md)
    * [笨方法学Python](_src/LPTHW/LPTHW.md)
