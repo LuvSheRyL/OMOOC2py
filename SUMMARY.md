@@ -28,7 +28,8 @@
    * [第八课-Qpython&移动平台](0MOOC/qpython.md)
 * [基础旋进](1sTry/README.md)
     * [PPT流大法](1sTry/ppt.md)
-* [迭代作品-大作业](2nDev/README.md)
+* [迭代作品-Runmap](2nDev/README.md)
+	* [Runmap-开发](runmap_quickstart.md)
 * [人生首秀](3rDemo/README.md)
 * [代码 (_src)](_src/README.md)
    * [笨方法学Python](_src/LPTHW/LPTHW.md)
@@ -47,5 +48,6 @@
    * [提问的智慧](0MOOC/tiwen.md)
    * [邮件技巧](http://blog.zhgdg.org/2013-06/zh-gdg-mailing/)
    * [能技](0MOOC/nengji.md)
+   * [匠人](0MOOC/jiangren.md)
 * [有关](ABOUT.md)
 
