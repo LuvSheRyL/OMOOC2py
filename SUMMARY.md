@@ -29,6 +29,7 @@
 * [基础旋进](1sTry/README.md)
  * [PPT流大法](1sTry/ppt.md)
  * [网页爬虫](1sTry/pachong.md)
+ * [图像处理](1sTry/opencv.md)
 * [迭代作品](2nDev/README.md)
  * [项目开发](2nDev/runmapquickstart.md)
  * [Design](2nDev/design.md)
