@@ -29,4 +29,8 @@ http://blog.csdn.net/bh20077/article/details/6946046” ，可以说仅对原文
 2. 从`C:\Anaconda\Lib\site-packages`找到numpy文件完整复制到`C:\Python27\Lib\site-packages`即可
 3. python环境中`import numpy`无报错，ok~
 
+# candy edge提取
+效果对比
+![](http://i12.tietuku.com/6a029876353f3830.png)
+代码讲解，[OpenCV-Python课程（11、轮廓检测）](http://m.myexception.cn/perl-python/1466348.html)
 
