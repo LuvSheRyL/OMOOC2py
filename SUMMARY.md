@@ -31,7 +31,7 @@
 * [迭代作品](2nDev/README.md)
  * [项目开发](2nDev/runmapquickstart.md)
  * [Design](2nDev/design.md)
- * [API](2nDev/api.md)
+ * [API](2nDev/API.md)
 * [人生首秀](3rDemo/README.md)
 * [代码 (_src)](_src/README.md)
    * [笨方法学Python](_src/LPTHW/LPTHW.md)

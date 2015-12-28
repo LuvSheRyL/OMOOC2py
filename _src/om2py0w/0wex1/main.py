@@ -53,8 +53,5 @@ def diary_main():
         print "Error,plz input w or r?"
     
     
-        
-
-while 1:
-    diary_main()
+cv2.waitKey(0)
     
