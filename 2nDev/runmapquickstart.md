@@ -49,57 +49,58 @@
 
 ## 版本规划：
 + 第1周：MVP
- + DAY1：功能精简、搭平台、熟悉API
+
++ DAY1：功能精简、搭平台、熟悉API
   + [交互效果V1.0](https://modao.cc/app/wZtUeShfg7Q8DGUeembZ)
-  + ![](http://i5.tietuku.com/2de2658477fdfc2bs.png)![](http://i5.tietuku.com/cf4ddc327dab57cds.png)
- + DAY2：[√]MVP_0.1 实现CLI地址、坐标解析，该结构可适用于后期api调用
++ DAY2：
+    - [x] MVP_0.1 实现CLI地址、坐标解析，该结构可适用于后期api调用
  + DAY3：--2015年12月9日
-   + [ ]交互页面V1.1初稿、说明文档（墨刀、layoutit.com）
-   + [ ]web架构MVP
-     + []本地运行版本实现：框架：flask
-     + []云平台选择:云os/sinasae/七牛 原则：优先考虑国内服务器。
-     + []公网版本MVP
-       + []通过域名访问
-       + []获取ip.gps 通过webapi解析
-   + [ ]服务端后台MVP
-     + [][数据表属性字段定义完善](http://developer.baidu.com/map/index.php?title=yingyan/api/entity)
-     + []上传本地gps信息并解析
-     + []可查询历史轨迹
- + DAY4：
-   + []页面定稿&文档
-   + []Web + html +(js)接口融合
-   + []优化、测试
- + DAY5/6：核心功能模块开发、优化
-   + []后台轨迹实时监控存储
-   + []后台历史轨迹查询
-   + []时间戳
-   + []多轨迹统计分析（轨迹活跃度|时间）
+   - [ ] 交互页面V1.1初稿、说明文档（墨刀、layoutit.com）
+   - [ ] web架构MVP
+     - [ ] 本地运行版本实现：框架：flask
+     - [ ] 云平台选择:云os/sinasae/七牛 原则：优先考虑国内服务器。
+     - [ ] 公网版本MVP
+       - [ ] 通过域名访问
+       - [ ] 获取ip.gps 通过webapi解析
+    - [ ] 服务端后台MVP
+     - [ ] [数据表属性字段定义完善](http://developer.baidu.com/map/index.php?title=yingyan/api/entity)
+     - [ ] 上传本地gps信息并解析
+     - [ ] 可查询历史轨迹
++ DAY4：
+   - [80%] 页面定稿&文档
+   - [ ] Web + html +(js)接口融合
+   - [ ] 优化、测试
++ DAY5/6：核心功能模块开发、优化
+   - [ ] 后台轨迹实时监控存储
+   - [ ] 后台历史轨迹查询
+   - [ ] 时间戳
+   - [ ] 多轨迹统计分析（轨迹活跃度|时间）
  
- + DAY7：独立模块内测、迭代
+- [ ] DAY7：独立模块内测、迭代
 + 第2周：优化迭代
- + DAY1：
-   + 增加覆盖物[（制定跑图图案）](http://developer.baidu.com/map/jsdemo.htm#a1_2)
-   + 轨迹完成度匹配分析--进度条
+ - [ ] DAY1：
+   - [ ] 增加覆盖物[（制定跑图图案）](http://developer.baidu.com/map/jsdemo.htm#a1_2)
+   - [ ] 轨迹完成度匹配分析--进度条
  + DAY2：
-   + 优化覆盖物[（制定跑图图案）](http://developer.baidu.com/map/jsdemo.htm#a1_2)
-   + [加载pm2.5天气信息](http://developer.baidu.com/map/index.php?title=car/api/weather)
-   + [结合历史轨迹数据进度完成情况，酌情生成地理围栏](http://developer.baidu.com/map/index.php?title=yingyan/api/fence)
- + DAY3：优化、测试、迭代
- + DAY4：   
-   + []用户认证
+   - [ ] 优化覆盖物[（制定跑图图案）](http://developer.baidu.com/map/jsdemo.htm#a1_2)
+   - [ ] [加载pm2.5天气信息](http://developer.baidu.com/map/index.php?title=car/api/weather)
+   - [ ] [结合历史轨迹数据进度完成情况，酌情生成地理围栏](http://developer.baidu.com/map/index.php?title=yingyan/api/fence)
+ - [ ] DAY3：优化、测试、迭代
+ - [ ] DAY4：   
+   - [ ] 用户认证
  + DAY5：
-   + []用户认证
-   + []自定义图形导航
- + DAY6：预发布
- + DAY7：迭代
+   - [ ] 用户认证
+   - [ ] 自定义图形导航
+ - [ ] DAY6：预发布
+ - [ ] DAY7：迭代
 + 第3周：测试、输出
- + DAY1：单元测试（相关函数穷举测试）
- + DAY2：单元测试（相关函数穷举测试）
- + DAY3：整体测试→更新→分支版本输出|操作文档编辑整理|演示素材收集整理
- + DAY4：分支版本小范围群测|操作文档编辑整理|演示素材收集整理
- + DAY5：群测反馈，修改，更新|操作文档定稿|路演视频初版
- + DAY6：预发布||路演视频定稿
- + DAY7：检查，总结
+ - [ ] DAY1：单元测试（相关函数穷举测试）
+ - [ ] DAY2：单元测试（相关函数穷举测试）
+ - [ ] DAY3：整体测试→更新→分支版本输出|操作文档编辑整理|演示素材收集整理
+ - [ ] DAY4：分支版本小范围群测|操作文档编辑整理|演示素材收集整理
+ - [ ] DAY5：群测反馈，修改，更新|操作文档定稿|路演视频初版
+ - [ ] DAY6：预发布||路演视频定稿
+ - [ ] DAY7：检查，总结
 
 + 代码交流：
  + [有道协作群 群号：15172380](http://163.fm/bCEj1yB)
