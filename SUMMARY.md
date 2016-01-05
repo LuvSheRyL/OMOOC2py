@@ -2,7 +2,7 @@
 
 * [简介](README.md)
    * [Markdown语法简介](markdownyu_fa_jian_jie.md)
-   	* [【转】Markdown新增文件目录](https://wp-lai.gitbooks.io/learn-python/content/0MOOC/doctoc.html)
+   	* [Markdown新增文件目录](https://wp-lai.gitbooks.io/learn-python/content/0MOOC/doctoc.html)
    * [环境配置](kexue_shang_wang_md.md)
        * [科学上网](ke_xue_shang_wang.md)
        * [Gitbook与Github互推](gitbookyu_github_hu_tui.md)
