@@ -15,6 +15,7 @@
        * [Pydoc for Win_CMD](0MOOC/pydoc_path.md)
        * [Vim for Win配置](0MOOC/vim.md)
        * [Z shell For Win](0MOOC/zsh.md)
+       * [SSH keys的设置](0MOOC/ssh.md)
 * [随堂记录](0MOOC/README.md)
    * [第一课](0MOOC/2015_10_10.md)
    * [第二课 CLI日记本](0MOOC/di_er_ke.md)
