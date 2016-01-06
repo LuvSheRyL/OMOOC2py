@@ -57,5 +57,6 @@
    * [邮件技巧](http://blog.zhgdg.org/2013-06/zh-gdg-mailing/)
    * [能技](0MOOC/nengji.md)
    * [匠人](0MOOC/jiangren.md)
+   * [心智复盘](0MOOC/xinzhifupan.md)
 * [有关](ABOUT.md)
 
