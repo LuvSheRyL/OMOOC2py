@@ -58,5 +58,9 @@
    * [能技](0MOOC/nengji.md)
    * [匠人](0MOOC/jiangren.md)
    * [心智复盘](0MOOC/xinzhifupan.md)
+
+* [数据科学](data102/README.md)
+   * [数据科学导论](data102/1wnote.md)
+   
 * [有关](ABOUT.md)
 
