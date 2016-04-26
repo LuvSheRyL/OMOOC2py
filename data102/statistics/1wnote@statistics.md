@@ -16,10 +16,14 @@
 对应的公式效果：
 
 $$ f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right) $$
-
-* * *
-
-
 $$$ \sum{i=0}^n\frac{1}{i^2} $$$
 $$$\lim_{n \rightarrow +\infty} \frac{1}{n(n+1)}$$$
+* * *
+
+均值：
+
+$$$mean=\frac{1+2+3+4+5}{5}=3$$$
+
+中值：
+
 
