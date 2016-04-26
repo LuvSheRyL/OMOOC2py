@@ -69,8 +69,18 @@
 练习题1：
 
 你认为应该用什么样的数字来度量中国人的生活水平变化？
+
++ [城乡人民收支情况](http://data.stats.gov.cn/easyquery.htm?cn=C01)
++ [人民生活-恩格尔系数](https://zh.wikipedia.org/zh-cn/恩格尔系数)
+
 尝试找到这样的数据源并画出图看看。
+
+![数据来源国家统计局](http://7xrpqy.com1.z0.glb.clouddn.com/data102%E5%9B%BD%E6%B0%91%E6%81%A9%E6%A0%BC%E5%B0%94%E7%B3%BB%E6%95%B0.png)
+
 用这种数字来衡量有什么样的缺点？
+
++ 太宏观，不够细化；
++ 数据不敏感，无感；
 
 练习题2：
 
@@ -83,7 +93,7 @@
 
 如何应用到具体场景？
 
-> 中医能治疗癌症？
+> 中医是否能治疗癌症？
 
 
 练习3题：练习使用Google ngram Viewer
@@ -91,6 +101,10 @@
 + https://books.google.com/ngrams
 + 并研究你关心的某一组词汇的变化。
 + [TED:我从500万本书里学到什么？](https://www.ted.com/talks/what_we_learned_from_5_million_books)
++ [TED:我从500万本书里学到什么？（中字）](http://mooc.guokr.com/talk/2947/)
+
+
+![](http://7xrpqy.com1.z0.glb.clouddn.com/data102python-machinelearning-dataanalysis-goole_Ngam_Viewer.png)
 
 
 练习题4：
@@ -100,12 +114,34 @@
 + 对于其结果如何利用；
 + http://vudlab.com/simpsons/
 
+>[辛普森悖论](https://zh.wikipedia.org/wiki/辛普森悖论)
+当人们尝试探究两种变量(比如新生录取率与性别)是否具有相关性的时候，会分别对之进行分组研究。然而，在分组比较中都占优势的一方，在总评中有时反而是失势的一方。该现象于20世纪初就有人讨论，但一直到1951年，E.H.辛普森在他发表的论文中阐述此一现象后，该现象才算正式被描述解释。后来就以他的名字命名此悖论，即辛普森悖论。
+为了避免辛普森悖论的出现，就需要斟酌各分组的权重，并乘以一定的系数去消除以分组数据基数差异而造成的影响。同时，我们必需清楚了解情况，以综合考虑是否存在造成此悖论的潜在因素。
+
+
 练习题5：
 
-什么是贝叶斯定理；
+什么是[贝叶斯定理](http://baike.baidu.com/view/1488573.htm)；
 
 已知某种疾病的发病率是0.001，即1000人中会有一个人得病。
 现有一种试剂可以检验患者是否得病，它的准确率是0.99，即在患者确实得病的情况下，它有99%的可能呈现阳性。
 它的误报率是5%，即在患者没有得病的情况下，它有5%的可能呈现阳性。现有一个病人的检验结果为阳性，请问他确实得病的可能性有多大？
 
-参考：[利用乐高积木讲贝叶斯](https://www.countbayesie.com/blog/2015/2/18/bayes-theorem-with-lego)
+> P(F)表示该疾病的发病概率=0.001，其值为F的先验概率；
+P(N)表示不发病概率=1-P(F)=0.999；
+P(+|F)表示在确认发病情况下检测阳性的概率=0.99；
+P(+|N)不发病检测出阳性的概率=0.05;
+求P(F|+)=?
+$$$P(+)=P(+,F)+P(+,N)=P(+|F)P(F)+P(+|N)P(N)=0.05094 $$$
+$$$ P(F|+)= \frac{P(+|F)*P(F)}{P(+)}=\frac{0.99*0.001}{0.05094}=0.01943 $$$
+即检验结果为阳性，确实得病的可能性为：1.94%
+
+
+
+
+
+
+
+参考：
++ [利用乐高积木讲贝叶斯](https://www.countbayesie.com/blog/2015/2/18/bayes-theorem-with-lego)
++ [PDF:老阳工作谈](http://www.yangzhiping.com/files/worksmarter.pdf)
