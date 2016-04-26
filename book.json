@@ -13,7 +13,6 @@
         "codeblock-filename",
         "emphasize",
         "splitter",
-        "-sharing",
         "baidu"
     
     
@@ -24,15 +23,6 @@
         },
         "github": {
             "url": "https://github.com/shawn0lee0/OMOOC2py"
-        },
-        "sharing": {
-            "weibo": true,
-            "facebook": true,
-            "twitter": true,
-            "google": false,
-            "instapaper": false,
-            "vk": false,
-            "all": ["facebook", "google", "twitter","weibo", "instapaper"]
         },
         "baidu": {
             "token" : "4def143c646e7b39db82b3ea3d78a166"
