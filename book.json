@@ -4,11 +4,15 @@
     "description": "开智Pytho学习笔记",
     "author": "Robo_one",
     
-    
+    "plugins": ["mathjax"],
     "plugins": ["disqus"],
     "pluginsConfig": {
         "disqus": {
             "shortName": "python-omooc2py"
         }
     }  
+
+    
+    
 }
+
