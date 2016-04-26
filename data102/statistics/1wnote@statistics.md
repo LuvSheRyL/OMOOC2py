@@ -13,7 +13,10 @@
 
 `例子：f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right)`
 
-对应的公式效果：$$$例子：f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right) $$$
+对应的公式效果：
+
+$$ f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right) $$
 
 * * *
+
 
