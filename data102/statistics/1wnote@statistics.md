@@ -8,7 +8,7 @@
 + [教程 Mathjax](http://docs.mathjax.org/en/latest/start.html)
 + [Mathjax教程PDF下载](https://media.readthedocs.org/pdf/mathjax/latest/mathjax.pdf)
 + [Markdown输入数学公式](http://ttang.name/2014/05/04/markdown-and-mathjax/)
-+ [Gitbook add mathjax](https://plugins.gitbook.com/plugin/mathjax)
++ [Gitbook插件](http://zhangjikai.com/gitbook-use/plugins.html)
 
 
 `例子：f(x,y,z) = 3y^2z \left( 3+\frac{7x+5}{1+y^2} \right)`
