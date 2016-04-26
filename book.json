@@ -6,7 +6,7 @@
     
     "plugins": [
         "disqus",
-        "katex",
+        "mathjax",
         "search-pro",
         "github",
         "advanced-emoji",
