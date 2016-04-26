@@ -10,11 +10,7 @@
             "shortName": "python-omooc2py"
         }
     }  
-
-    
-    
-}
-
-{
     "plugins": ["mathjax"]
+    
+    
 }
