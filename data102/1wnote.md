@@ -137,6 +137,7 @@ $$ P(+)=P(+,F)+P(+,N)=P(+|F)P(F)+P(+|N)P(N)=0.05094 $$
 
 $$ P(F|+)= \frac{P(+|F)*P(F)}{P(+)}=\frac{0.99*0.001}{0.05094}=0.01943 $$
 
+$
 即检验结果为阳性，确实得病的可能性为：1.94%
 
 
@@ -148,3 +149,4 @@ $$ P(F|+)= \frac{P(+|F)*P(F)}{P(+)}=\frac{0.99*0.001}{0.05094}=0.01943 $$
 参考：
 + [利用乐高积木讲贝叶斯](https://www.countbayesie.com/blog/2015/2/18/bayes-theorem-with-lego)
 + [PDF:老阳工作谈](http://www.yangzhiping.com/files/worksmarter.pdf)
++ [sklearn](http://scikit-learn.org/stable/auto_examples/index.html)
