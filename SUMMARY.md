@@ -61,6 +61,7 @@
 
 * [数据科学](data102/README.md)
    * [数据科学导论](data102/1wnote.md)
-   
+* [统计学笔记](data102/statistics/1wnote@statistics.md)
+
 * [有关](ABOUT.md)
 

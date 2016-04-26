@@ -93,15 +93,19 @@
 + [TED:我从500万本书里学到什么？](https://www.ted.com/talks/what_we_learned_from_5_million_books)
 
 
-练习4：
+练习题4：
 
 + 什么是Simpson‘s paradox
 + 为什么会出现Simpson’s paradox
 + 对于其结果如何利用；
 + http://vudlab.com/simpsons/
 
-练习：
+练习题5：
 
 什么是贝叶斯定理；
 
-![](http://7xrpqy.com1.z0.glb.clouddn.com/data102%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%AE%9A%E7%90%86.png)
+已知某种疾病的发病率是0.001，即1000人中会有一个人得病。
+现有一种试剂可以检验患者是否得病，它的准确率是0.99，即在患者确实得病的情况下，它有99%的可能呈现阳性。
+它的误报率是5%，即在患者没有得病的情况下，它有5%的可能呈现阳性。现有一个病人的检验结果为阳性，请问他确实得病的可能性有多大？
+
+参考：[利用乐高积木讲贝叶斯](https://www.countbayesie.com/blog/2015/2/18/bayes-theorem-with-lego)
