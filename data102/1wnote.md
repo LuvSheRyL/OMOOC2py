@@ -147,6 +147,10 @@ $
 
 
 参考：
+
 + [利用乐高积木讲贝叶斯](https://www.countbayesie.com/blog/2015/2/18/bayes-theorem-with-lego)
 + [PDF:老阳工作谈](http://www.yangzhiping.com/files/worksmarter.pdf)
 + [sklearn](http://scikit-learn.org/stable/auto_examples/index.html)
++ [大数据导航网站LIST](http://hao.199it.com/)
++ [百度数据可视化产品|Github](https://github.com/ecomfe/echarts)
++ [百度数据可视化产品echarts](http://echarts.baidu.com/)
