@@ -5,12 +5,24 @@
 
 ## 一、Linux操作
 
+[国内镜像源链接汇总](http://www.centoscn.com/yunwei/news/2016/0417/7070.html)
 
-
-思考
-1. 如何查看文件的前100行和最后100行？
-1. 如何查看文件的第3列？
-1. 如何统计文件的前100行有多少个单词？
+- 一、站点版
+- （一）、企业站
+- 1.搜狐：http://mirrors.sohu.com/
+- 2.网易：http://mirrors.163.com/
+- 3.阿里云：http://mirrors.aliyun.com/
+- 4.腾讯：http://android-mirror.bugly.qq.com:8080/（仅针对APP开发的软件，限流，不推荐）
+- 
+- （二）、教育站
+- 1.上海交通大学：http://ftp.sjtu.edu.cn/html/resources.xml（部分移动运营商出口状况不佳，无法访问）
+- 2.华中科技大学：http://mirror.hust.edu.cn/（当前已用容量估计：4.83T）
+- 3.清华大学：http://mirrors.tuna.tsinghua.edu.cn/（当前已用容量估计：9.8T）
+- 
+- 思考
+- 1. 如何查看文件的前100行和最后100行？
+- 1. 如何查看文件的第3列？
+- 1. 如何统计文件的前100行有多少个单词？
 
 ## 二、Python数据工具箱
 
